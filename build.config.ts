@@ -28,7 +28,6 @@ const copyConfig : esbuild.BuildOptions = {
     './src/**/index.html',
     './src/**/_assets/**',
     './src/**/_src/**/*.js',
-    './src/**/_templates/*.html'
   ]
 }
 
@@ -44,7 +43,7 @@ const filesConfig : esbuild.BuildOptions = {
   entryNames: '[dir]/bundle.min',
   entryPoints: [
     './src/**/index.ts',
-    './src/**/index.scss',
+    './src/**/style.css',
   ],
   plugins: [
     esbuildPluginSass()
