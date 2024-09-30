@@ -1,9 +1,6 @@
 # build output
 dist/
 
-# generated types
-.astro/
-
 # dependencies
 node_modules/
 
@@ -24,5 +21,4 @@ node_modules
 .vscode/
 dist/
 
-*.css
 report.xml
