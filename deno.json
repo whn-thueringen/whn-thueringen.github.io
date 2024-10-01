@@ -1,0 +1,72 @@
+{
+  "tasks": {
+    "build": "deno run -A ./config/build/index.ts",
+    "build:watch": "deno run -A ./config/build/index.ts --watch",
+    "build:dev": "deno run -A ./config/build/index.ts --develope",
+    "build:dev:watch": "deno run -A ./config/build/index.ts --develope --watch",
+    "serve": "deno run -A ./src/server/index.ts",
+    "serve:dev": "deno run -A ./src/server/index.ts --develope --port=8000",
+    "lint": "deno lint",
+    "test": "deno test -A --check --reload --doc --permit-no-files --junit-path=\"./reports/report.xml\""
+  },
+  "lock": "./config/lock.json",
+  "importMap": "./config/import_map.json",
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "experimentalDecorators": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "webworker"
+    ],
+    "types": [
+      "./config/types/scss.d.ts"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:solid-js"
+  },
+  "exclude": [
+    "./dist/"
+  ],
+  "test": {
+    "include": [
+      "**/*.test.ts"
+    ]
+  },
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "camelcase",
+        "default-param-last",
+        "eqeqeq",
+        "explicit-function-return-type",
+        "explicit-module-boundary-types",
+        "guard-for-in",
+        "no-const-assign",
+        "no-eval",
+        "no-external-import",
+        "no-non-null-asserted-optional-chain",
+        "no-non-null-assertion",
+        "no-self-compare",
+        "no-sparse-arrays",
+        "no-sync-fn-in-async-fn",
+        "no-throw-literal",
+        "no-undef",
+        "prefer-ascii",
+        "single-var-declarator",
+        "verbatim-module-syntax"
+      ],
+      "exclude": [
+        "no-inferrable-types"
+      ]
+    }
+  },
+  "fmt": {
+    "singleQuote": true,
+    "lineWidth": 120
+  }
+}
