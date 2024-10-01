@@ -73,7 +73,7 @@ const ContactForm = () => {
         <h5>Unsere Kontaktdaten</h5>
         <p><strong>E-Mail:</strong> info@whn-thueringen.de</p>
         <p><strong>Telefon:</strong> +49 123 456 789</p>
-        <p><strong>Adresse:</strong> Musterstraße 1, 12345 Stadt</p>
+        <p><strong>Adresse:</strong> Musterstrasse 1, 12345 Stadt</p>
       </div>
     </div>
   );
