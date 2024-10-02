@@ -10,15 +10,17 @@
     <!-- script -->
     <script type="module" src="./_scripts/bundle.min.js" defer></script>
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- style -->
     <link rel="stylesheet" href="./_styles/bundle.min.css">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light border-bottom border-dark p-2">
+  <nav class="navbar navbar-expand-lg p-2">
       <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="https://raw.githubusercontent.com/fwhn-thueringen-de/fwhn-thueringen.github.io/refs/heads/main/src/client/_assets/FWHN_Logo_final_fu%CC%88r_Hintergrund_dunkel.svg" alt="WHN Thüringen Logo" class="img-fluid svg-small" style="max-width: 150px;">
+            <img src="_assets/FWHN_Logo_final_für_Hintergrund_hell.svg" alt="WHN Thüringen Logo" class="img-fluid svg-small" style="max-width: 150px;">
           </a>
           <h4 class="mt-2 me-3">FWHN Thüringen</h4>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,16 +29,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                   <li class="nav-item">
-                      <a class="nav-link bg-dark rounded pe-2 ps-2 mt-2 me-2" href="#Projekte">Projekte</a>
+                      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="#Projekte">Projekte</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link bg-dark rounded pe-2 ps-2 mt-2 me-2" href="#team">Unser Team</a>
+                      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="#team">Unser Team</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link bg-dark rounded pe-2 ps-2 mt-2 me-2" href="#Downloads">Downloads</a>
+                    <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="#Downloads">Formulare</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link bg-dark rounded pe-2 ps-2 mt-2 me-2" href="#Kontakt">Kontakt</a>
+                    <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="#satzung">Satzung</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="#Impressum">Impressum</a>
                   </li>
               </ul>
           </div>
@@ -44,18 +49,18 @@
   </nav>
 
   <!-- Header -->
-  <header class="text-white text-center py-5 border-bottom border-secondary p-2">
+  <header class="text-center pt-4 pb-5">
       <h1>Förderverein Weiblicher Handballnachwuchs Thüringen</h1>
   </header>
+  <div class="wave-border"></div>
 
   <!-- Leitthemen -->
-  <section class="container my-5" id="Leitthemen">
-    <h2 class="text-center mb-4 text-light">Darin sind wir stark</h2> 
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Darin sind wir stark</h2> 
     <div id="leitthemenCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-
             <div class="carousel-item active">
-                <div class="card bg-dark text-light">
+                <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Gleichberechtigung</h5>
                         <p class="card-text">Wir fördern aktiv Mädchen im Handballsport und schaffen Chancengleichheit.</p>
@@ -64,7 +69,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="card bg-dark text-light">
+                <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Teamgeist</h5>
                         <p class="card-text">Wir fördern den Zusammenhalt und die Zusammenarbeit im Team.</p>
@@ -73,7 +78,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="card bg-dark text-light">
+                <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Fairness</h5>
                         <p class="card-text">Wir legen großen Wert auf Fairplay und Respekt gegenüber allen Beteiligten.</p>
@@ -82,7 +87,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="card bg-dark text-light">
+                <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Engagement</h5>
                         <p class="card-text">Wir unterstützen die kontinuierliche Entwicklung der Spielerinnen.</p>
@@ -91,7 +96,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="card bg-dark text-light">
+                <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Nachhaltigkeit</h5>
                         <p class="card-text">Wir achten darauf, dass unsere Angebote langfristig wirken.</p>
@@ -100,7 +105,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="card bg-dark text-light">
+                <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Integration</h5>
                         <p class="card-text">Wir fördern die Teilhabe von Menschen unterschiedlicher Hintergründe.</p>
@@ -109,7 +114,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="card bg-dark text-light">
+                <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Förderung</h5>
                         <p class="card-text">Vielfältige Möglichkeiten zur individuellen Förderung jeder Spielerin.</p>
@@ -118,7 +123,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="card bg-dark text-light">
+                <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Entwicklung junger Talente</h5>
                         <p class="card-text">Talentierte Spielerinnen sollen bestmöglich entwickelt werden.</p>
@@ -127,7 +132,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="card bg-dark text-light">
+                <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Breitensport stärken</h5>
                         <p class="card-text">Zugang zum Handballsport für viele Mädchen und lebenslanges Engagement im Sport.</p>
@@ -136,7 +141,7 @@
             </div>
 
             <div class="carousel-item">
-                <div class="card bg-dark text-light">
+                <div class="card">
                     <div class="card-body text-center">
                         <h5 class="card-title">Persönlichkeitsentwicklung</h5>
                         <p class="card-text">Entwicklung von sozialen Kompetenzen wie Selbstbewusstsein und Teamfähigkeit.</p>
@@ -147,20 +152,18 @@
         </div>
         <button class="carousel-control-prev hidden" type="button" data-bs-target="#leitthemenCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Zurück</span>
         </button>
         <button class="carousel-control-next hidden" type="button" data-bs-target="#leitthemenCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Weiter</span>
         </button>
     </div>
 </section>
-
-<section class="container my-5" id="Projekte">
-    <h2 class="text-center mb-4 text-light">Projekte</h2>
-    <div class="row">
-        <div class="col-md-6 mb-4">
-            <div class="card bg-dark text-light">
+<div class="wave-border" id="Projekte"></div>
+<section class="container my-5">
+    <h2 class="text-center mb-4">Projekte</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-3 mb-4">
+            <div class="card">
                 <img src="_assets/eb6443c0-edd9-454c-ac6a-fe4bd3458edc.jpeg" alt="Projekt 1" class="card-img-top rounded" style="width: 100%; height: auto;">
                 <div class="card-body">
                     <h5 class="card-title">Projekt 1</h5>
@@ -169,8 +172,8 @@
             </div>
         </div>
         
-        <div class="col-md-6 mb-4">
-            <div class="card bg-dark text-light">
+        <div class="col-md-3 mb-4">
+            <div class="card">
                 <img src="_assets/eb6443c0-edd9-454c-ac6a-fe4bd3458edc.jpeg" alt="Projekt 2" class="card-img-top rounded" style="width: 100%; height: auto;">
                 <div class="card-body">
                     <h5 class="card-title">Projekt 2</h5>
@@ -179,8 +182,8 @@
             </div>
         </div>
 
-        <div class="col-md-6 mb-4">
-            <div class="card bg-dark text-light">
+        <div class="col-md-3 mb-4">
+            <div class="card">
                 <img src="_assets/eb6443c0-edd9-454c-ac6a-fe4bd3458edc.jpeg" alt="Projekt 2" class="card-img-top rounded" style="width: 100%; height: auto;">
                 <div class="card-body">
                     <h5 class="card-title">Projekt 3</h5>
@@ -189,8 +192,8 @@
             </div>
         </div>
 
-        <div class="col-md-6 mb-4">
-            <div class="card bg-dark text-light">
+        <div class="col-md-3 mb-4">
+            <div class="card">
                 <img src="_assets/eb6443c0-edd9-454c-ac6a-fe4bd3458edc.jpeg" alt="Projekt 2" class="card-img-top rounded" style="width: 100%; height: auto;">
                 <div class="card-body">
                     <h5 class="card-title">Projekt 4</h5>
@@ -200,13 +203,12 @@
         </div>
     </div>
 </section>
-
-
-  <section class="container my-5" id="team">
-    <h2 class="text-center mb-4 text-light">Unser Team</h2>
-    <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card bg-dark text-light">
+<div class="wave-border" id="team"></div>
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Unser Team</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-3 mb-4">
+            <div class="card">
                 <img src="./_assets/head-side-view-black-silhouette-of-male-bald-shape.svg" class="card-img-top" alt="Teammitglied 1" style="border-radius: 15px;">
                 <div class="card-body text-center">
                     <h5 class="card-title">Max Mustermann</h5>
@@ -214,8 +216,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card bg-dark text-light">
+        <div class="col-md-3 mb-4">
+            <div class="card">
                 <img src="./_assets/head-side-view-black-silhouette-of-male-bald-shape.svg" class="card-img-top" alt="Teammitglied 2" style="border-radius: 15px;">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anna Müller</h5>
@@ -223,8 +225,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card bg-dark text-light">
+        <div class="col-md-3 mb-4">
+            <div class="card">
                 <img src="./_assets/head-side-view-black-silhouette-of-male-bald-shape.svg" class="card-img-top" alt="Teammitglied 3" style="border-radius: 15px;">
                 <div class="card-body text-center">
                     <h5 class="card-title">Lukas Schmidt</h5>
@@ -235,12 +237,12 @@
 
     </div>
 </section>
-
-<section class="container my-5" id="Downloads">
-    <h2 class="text-center mb-4 text-light">Downloads</h2>
+<div class="wave-border" id="Downloads"></div>
+<section class="container my-5">
+    <h2 class="text-center mb-4">Formulare</h2>
     <div class="row">
         <div class="col-md-4 mb-4">
-            <div class="card bg-dark text-light">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Anmeldeformular</h5>
                     <p class="card-text">Anmeldeformular für unser Handballcamp herunter.</p>
@@ -249,7 +251,7 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card bg-dark text-light">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Flyer</h5>
                     <p class="card-text">Hier finden Sie alle Informationen zu unserem Verein.</p>
@@ -258,7 +260,7 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card bg-dark text-light">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Trainingsplan</h5>
                     <p class="card-text">Laden Sie unseren aktuellen Trainingsplan herunter.</p>
@@ -268,22 +270,42 @@
         </div>
       </div>
     </section>
-    <section class="container my-5" id="Kontakt">
-
-    </section>
+    <div class="wave-border" id="satzung"></div>
 
 
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Satzung</h2>
+        <ul class="list-unstyled">
+          <li class="mb-3 justify-content-cente">
+            <strong>§ 1 Name und Sitz</strong> 
+            <br>
+            ...
+          </li>
+          <li class="mb-3">
+            <strong>§ 2 Zweck</strong> 
+            <br>
+            ....
+          </li>
+          <li class="mb-3">
+            <strong>§ 3 Mitgliedschaft</strong> 
+            <br>
+            ...
+          </li>
+        </ul>
+        <a href="path/to/trainingsplan.pdf" class="btn btn-primary">Satzung herunterladen</a>
+      </section>
+    <div class="wave wave--top"></div>
   <!-- Footer -->
-  <footer class="bg-dark text-light text-center p-4">
+  <footer class="text-center p-4" id="Impressum">
     <div class="container">
         <h5>Impressum</h5>
         <p><strong>Förderverein für weiblichen Handball</strong></p>
         <p>Adresse: Musterstrasse 1<br>
         12345 Musterstadt<br>
         Deutschland</p>
-        <p>Telefon: +49 123 456789<br>
-        E-Mail: <a href="mailto:info@whn-thueringen.de" class="text-light">info@whn-thueringen.de</a></p>
-        <p>Vertreten durch: Max Mustermann</p>
+        <p>Telefon: +49 0176 44415740<br>
+        E-Mail: <a href="mailto:info@whn-thueringen.de">info@whn-thueringen.de</a></p>
+        <p>Vertreten durch: Steffi Günther</p>
         <p>USt-IdNr: DE123456789</p>
     </div>
 </footer>
