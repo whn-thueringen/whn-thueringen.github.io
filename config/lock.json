@@ -1333,5 +1333,17 @@
       }
     }
   },
-  "remote": {}
+  "remote": {},
+  "workspace": {
+    "packageJson": {
+      "dependencies": [
+        "npm:@types/express@^5.0.0",
+        "npm:@types/nodemailer@^6.4.16",
+        "npm:dotenv@^16.4.5",
+        "npm:express@^4.21.0",
+        "npm:nodemailer@^6.9.15",
+        "npm:solid-js@^1.9.1"
+      ]
+    }
+  }
 }

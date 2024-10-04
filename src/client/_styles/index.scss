@@ -11,13 +11,14 @@ body {
 }
 
 .navbar {
-  background-color: #eeeeee; 
+  background-color: #dfdfdf; 
 }
 
 .nav-link {
   color: #333333; 
-  background-color: #dfdfdf;
+  background-color: #eeeeee;
   font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link:hover {
@@ -25,7 +26,7 @@ body {
 }
 
 header {
-  background-color: #eeeeee;
+  background-color: #dfdfdf;
   color: #333333; 
 }
 
@@ -55,8 +56,6 @@ header {
   height: 50px;
   position: relative;
   margin-bottom: 20px;
-
-  transform: translateY(20px);
   
   &::before,
   &::after {
@@ -83,6 +82,8 @@ header {
   &--top {
     background: linear-gradient(to top, #dfdfdf, #dfdfdf);
     
+    transform: translateY(20px);
+
     &::before,
     &::after {
       // to take place in top instead of bottom
@@ -100,6 +101,39 @@ header {
   }
 }
 
+.wave-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #dfdfdf, #dfdfdf);
+  height: 50px;
+  position: relative;
+  margin-bottom: 20px;
+  
+  &::before,
+  &::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  }
+  
+  &::before {
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #eeeeee 13px);
+  }
+
+  &::after {
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, #eeeeee 12px, transparent 13px);
+  }
+ 
+}
+
 .btn-accent {
   background-color: #ff007f; 
   color: #333333;
@@ -115,9 +149,21 @@ footer {
   font-weight: bolder;
 }
 
-.card {
+.carousel-item {
+  background-color: #ffffff;
+}
+
+.card-light {
+  background-color: #f9f9f9;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-secondary {
   background-color: #dfdfdf;
   border: none;
+  box-shadow: 0 0 10px rgba(92, 92, 92, 0.317);
+  border-radius: 0.375rem;
 }
 
 .svg-small {
@@ -131,6 +177,12 @@ footer {
   }
 }
 
+.line {
+  border-bottom: 2px solid #333333;
+  border-radius: 0.375rem; 
+  width: 30%;
+  margin-bottom: 12px;
+}
 
 .btn-primary {
   --bs-btn-color: #333333;
@@ -149,3 +201,54 @@ footer {
   --bs-btn-disabled-border-color: #ff9601;
 }
 
+
+
+.secondary-background {
+  background-color: #dfdfdf;
+}
+
+
+
+.document-section {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: #333;
+    font-size: 2rem;
+  }
+
+  .document-content {
+    margin-top: 1.5rem;
+  }
+
+  .document-section-item {
+    margin-bottom: 1.5rem;
+
+    h3 {
+      font-size: 1.25rem;
+      color: #444;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #888;
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      color: #666;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: disc inside;
+      padding-left: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
