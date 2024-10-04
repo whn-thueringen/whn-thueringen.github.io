@@ -5,3 +5,7 @@ reports/
 *.css
 
 .env
+
+node_modules/
+
+
