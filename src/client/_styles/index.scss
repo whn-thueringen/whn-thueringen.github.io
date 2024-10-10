@@ -311,3 +311,26 @@ footer {
 .card-img-top {
     border-radius: 20px;
 }
+
+
+
+
+.supporter-logos {
+  animation: slide 30s linear infinite;
+
+  .supporter-logo {
+    width: 150px; 
+    margin-right: 20px; 
+    height: auto;
+  }
+}
+
+/* Animation*/
+@keyframes slide {
+  from {
+      transform: translateX(-20%);
+  }
+  to {
+      transform: translateX(-70%); 
+  }
+}

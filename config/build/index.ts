@@ -25,7 +25,8 @@ const copyConfig : esbuild.BuildOptions = {
     '.jpg': 'copy',
     '.ico': 'copy',
     '.jpeg': 'copy',
-  },
+    '.pdf': 'copy',
+  }, 
   entryPoints: [
     './src/**/index.html',
     './src/**/_assets/**'
