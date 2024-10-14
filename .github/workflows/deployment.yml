@@ -27,7 +27,7 @@ jobs:
 
     env:
       deno-version: v1.x
-      page-root-directory: './dist/'
+      page-root-directory: 'dist/'
 
     runs-on: ubuntu-latest
     steps:
