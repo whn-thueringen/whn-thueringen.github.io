@@ -22,6 +22,7 @@ function App(): JSX.Element {
   );
 }
 
+// deno-lint-ignore no-undef
 const root = document.getElementById("app");
 
 if (root) {

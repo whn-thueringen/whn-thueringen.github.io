@@ -4,7 +4,7 @@ const Wrapper = (props: ParentProps) => (
   <section class="container my-5" id="team">{props.children}</section>
 );
 
-const TeamHeader = (p) => (
+const TeamHeader = () => (
   <h2 class="text-center mb-4">Vorstand</h2>
 );
 
@@ -44,7 +44,7 @@ const Team = () => (
       <TeamHeader />
       <ContentWrapper>
         <Content1 />
-        <Content />
+        <Content2 />
       </ContentWrapper>
     </Wrapper>
   </>
