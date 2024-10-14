@@ -38,7 +38,7 @@ const filesConfig : esbuild.BuildOptions = {
   logLevel: args.logLevel ?? 'info',
   legalComments: args.develope ? 'inline' : 'none',
   color: true,
-  minify: !args.develope ?? true,
+  minify: args.develope?true:false, 
   outdir: './dist',
   bundle: true,
   format: 'esm',
@@ -48,7 +48,7 @@ const filesConfig : esbuild.BuildOptions = {
   tsconfig: './deno.json',
   entryNames: '[dir]/bundle.min',
   entryPoints: [
-    './src/client/**/index.tsx',
+    './src/client/**/app.tsx',
     './src/client/**/index.scss',
   ],
   supported: {

@@ -31,7 +31,7 @@ const ImpressumContent = () => (
 
 const Impressum = () => (
   <>
-    <WaveTop></WaveTop> 
+    <WaveTop></WaveTop>
     <Footer>
       <Div>
         <ImpressumContent></ImpressumContent>
