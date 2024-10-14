@@ -34,13 +34,13 @@ const NavbarLinks = () => (
         <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="#News">News & Aktuelles</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="/whn-thueringen.github.io/projekte/">Projekte</a>
+        <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="./projekte/">Projekte</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="/whn-thueringen.github.io/unterstützer/">Unterstützer</a>
+      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="./unterstützer/">Unterstützer</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="/whn-thueringen.github.io/dokumente/">Dokumente</a>
+      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="./dokumente/">Dokumente</a>
     </li>
     <li class="nav-item">
         <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="#team">Vorstand</a>

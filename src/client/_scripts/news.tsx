@@ -15,7 +15,7 @@ const NewsHeader = () => (
 );
 
 const NewsWrapper = (props: ParentProps) => (
-  <header class="text-center pt-4 pb-3">{props.children}</header>
+  <div class="row justify-content-center">{props.children}</div>
 );
 
 const NewsContent1 = () => (

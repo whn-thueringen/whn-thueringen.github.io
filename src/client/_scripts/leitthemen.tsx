@@ -13,7 +13,7 @@ const CarouselWrapper = (props: ParentProps) => (
 );
 
 const CarouselItems = () => (
-  <>
+  <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="card">
           <div class="card-body text-center">
@@ -103,7 +103,7 @@ const CarouselItems = () => (
           </div>
       </div>
     </div>
-  </>
+  </div>
 );
 
 const CarouselButtons = () => (
