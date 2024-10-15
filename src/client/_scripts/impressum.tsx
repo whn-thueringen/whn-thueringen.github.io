@@ -24,7 +24,7 @@ const ImpressumContent = () => (
     <p>Vertreten durch: Ruben Arnold & Steffen Ahrens</p>
     <p>StNr.: 151/141/20933</p>
     <div class="line"></div>
-    <a href="/whn-thueringen.github.io/datenschutz/">Datenschutzerklärung</a>
+    <a href="./datenschutz/">Datenschutzerklärung</a>
   </>
 );
 

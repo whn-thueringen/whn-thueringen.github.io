@@ -10,7 +10,7 @@ const NavbarContainer = (props: ParentProps) => (
 
 const NavbarImage = () => (
   <a class="navbar-brand" href="/whn-thueringen.github.io/">
-    <img src="_assets/FWHN_Logo_final_für_Hintergrund_hell.svg" alt="WHN Thüringen Logo" class="img-fluid svg-small" style="max-width: 150px;"></img>
+    <img src="https://raw.githubusercontent.com/whn-thueringen/whn-thueringen.github.io/refs/heads/main/src/client/_assets/FWHN_Logo_final_fu%CC%88r_Hintergrund_hell.svg" alt="WHN Thüringen Logo" class="img-fluid svg-small" style="max-width: 150px;"></img>
   </a>
 );
 
@@ -31,22 +31,22 @@ const NavbarLinksWrapper = (props: ParentProps) => (
 const NavbarLinks = () => (
   <ul class="navbar-nav">
     <li class="nav-item">
-        <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="#News">News & Aktuelles</a>
+        <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="/#News">News & Aktuelles</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="./projekte/">Projekte</a>
+        <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="/projekte/">Projekte</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="./unterstützer/">Unterstützer</a>
+      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="/unterstützer/">Unterstützer</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="./dokumente/">Dokumente</a>
+      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="/dokumente/">Dokumente</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="#team">Vorstand</a>
+        <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="/#team">Vorstand</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="#Impressum">Impressum</a>
+      <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="/#Impressum">Impressum</a>
     </li>
   </ul>
 );
