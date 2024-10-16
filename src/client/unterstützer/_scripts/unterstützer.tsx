@@ -1,36 +1,16 @@
-import type { ParentProps } from 'solid-js';
+interface CardProps {
+  title: string;
+  imgSrc: string;
+  imgSrcAlt: string;
+  link: string;
+}
 
-const Wrapper = (props: ParentProps) => (
-  <section class="container my-5" id="supporters">{props.children}</section>
-);
-
-const UnterstützerTitle = () => (
-  <h2 class="text-center mb-4">Unsere Unterstützer</h2>
-);
-
-const ContentWrapper = (props: ParentProps) => (
-  <div class="row justify-content-center">{props.children}</div>
-);
-
-const CardContent1 = () => (
+const Card = ( props: CardProps ) => (
   <div class="col-md-4 mb-4">
     <div class="card text-center">
-      <img src="../_assets/logo_avenida_therme.png" class="card-img-top p-2" alt="Unterstützer 1"></img>
+      <img src={props.imgSrc} class="card-img-top p-2" alt={props.imgSrcAlt}></img>
       <div class="card-body">
-        <h5 class="card-title"><a href="https://www.avenida-therme.de" target="_blank">Avenida Therme Hohenfelden</a></h5>
-        <p class="card-text"></p>
-      </div>
-    </div>
-  </div>
-);
-
-
-const CardContent2 = () => (
-  <div class="col-md-4 mb-4">
-    <div class="card text-center">
-      <img src="../_assets/Logo_Heinze-Kollegen_Website.png" class="card-img-top p-2 pt-4" alt="Unterstützer 2"></img>
-      <div class="card-body">
-        <h5 class="card-title"><a href="https://hk-finanzberatung.de/" target="_blank">Heinze & Kollegen Finanzberatung</a></h5>
+        <h5 class="card-title"><a href={props.link} target="_blank">{props.title}</a></h5>
         <p class="card-text"></p>
       </div>
     </div>
@@ -38,15 +18,23 @@ const CardContent2 = () => (
 );
 
 const Unterstützer = () => (
-  <>
-    <Wrapper>
-      <UnterstützerTitle></UnterstützerTitle>
-      <ContentWrapper>
-        <CardContent1></CardContent1>
-        <CardContent2></CardContent2>
-      </ContentWrapper>
-    </Wrapper>
-  </>
+  <section class="container my-5" id="supporters">  
+    <h2 class="text-center mb-4">Unsere Unterstützer</h2>
+    <div class="row justify-content-center">
+      <Card
+      title="Avenida Therme Hohenfelden"
+      imgSrc="../_assets/logo_avenida_therme.png"
+      imgSrcAlt="Avenida Therme Hohenfelden"
+      link="https://www.avenida-therme.de"
+      />
+      <Card
+      title="Heinze & Kollegen Finanzberatung"
+      imgSrc="../_assets/Logo_Heinze-Kollegen_Website.png"
+      imgSrcAlt="Heinze & Kollegen Finanzberatung"
+      link="https://hk-finanzberatung.de/"
+      />
+    </div>
+  </section>
 );
 
 export default Unterstützer;

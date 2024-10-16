@@ -1,23 +1,24 @@
-import type { ParentProps } from 'solid-js';
 import WaveBottom from "./wave_bottom.tsx";
 
-const HeaderWrapper = (props: ParentProps) => (
-  <header class="text-center pt-4 pb-3">{props.children}</header>
-);
+interface HeaderProps {
+  description: string;
+}
 
-const HeaderContent = () => (
+const HeaderContent = ( props: HeaderProps ) => (
   <>
-    <h1>Förderverein weiblicher Handballnachwuchs Thüringen</h1>
+    <h1>{props.description}</h1>
   </>
 );
 
 
 const Header = () => (
   <>
-    <HeaderWrapper>
-      <HeaderContent></HeaderContent>
-    </HeaderWrapper>
-    <WaveBottom></WaveBottom>
+    <header class="text-center pt-4 pb-3">
+      <HeaderContent 
+        description="Förderverein weiblicher Handballnachwuchs Thüringen"
+      />
+    </header>
+    <WaveBottom />
   </>
 );
 

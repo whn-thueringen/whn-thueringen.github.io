@@ -13,12 +13,12 @@ const ImpressumContent = () => (
   <>
     <h4>Impressum</h4>
     <p><strong>Förderverein des weiblichen Handballnachwuchses in Thüringen e.V.</strong></p>
-    <h5>Adresse</h5>
+    {/* <h5>Adresse</h5>
     <p class="m-0">c/o Steffen Ahrens</p>
     <p class="eingerückt m-0">Vor der Lohweide 29</p>
     <p class="eingerückt m-0">99092 Erfurt</p>
-    <p class="eingerückt">Deutschland</p>
-    <p>Ansprechpartner: Steffi Günther</p>
+    <p class="eingerückt">Deutschland</p> */}
+    <p class='m-0'>Ansprechpartner: Steffi Günther</p>
     <p>Telefon: +49 176 44415740</p>
     <p>Email: info@whn-thueringen.de</p>
     <p>Vertreten durch: Ruben Arnold & Steffen Ahrens</p>

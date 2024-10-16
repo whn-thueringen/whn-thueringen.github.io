@@ -7,6 +7,7 @@ import Leitthemen from "./leitthemen.tsx";
 import SponsorSlider from "./sponsor_slider.tsx";
 import News from "./news.tsx";
 import Team from "./team.tsx"; 
+import Bankverbindung from './bankverbindung.tsx';
 
 function App(): JSX.Element {
   return (
@@ -14,9 +15,10 @@ function App(): JSX.Element {
       <Navbar />
       <Header />
       <Leitthemen />
-      <SponsorSlider />
       <News />
+      <SponsorSlider />
       <Team />
+      <Bankverbindung />
       <Impressum />
     </>
   );

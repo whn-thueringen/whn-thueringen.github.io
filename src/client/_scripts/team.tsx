@@ -1,52 +1,46 @@
-import type { ParentProps } from 'solid-js';
+import WaveTop from "./wave_top.tsx";
+import WaveBottom from './wave_bottom.tsx';
 
-const Wrapper = (props: ParentProps) => (
-  <section class="container my-5" id="team">{props.children}</section>
-);
+interface ContentProps {
+  imgSrc: string;
+	imgSrcAlt: string;
+  title: string;
+}
 
-const TeamHeader = () => (
-  <h2 class="text-center mb-4">Vorstand</h2>
-);
-
-const ContentWrapper = (props: ParentProps) => (
-  <div class="row justify-content-center">{props.children}</div>
-);
-
-const Content1 = () => (
+const Content = ( props: ContentProps ) => (
   <>
     <div class="col-md-4 mb-4">
       <div class="card ">
-          <img src="./_assets/Ruben_Arnold-no_logo.png" class="card-img-top" alt="Teammitglied 1"></img>
+          <img src={props.imgSrc} class="card-img-top" alt={props.imgSrcAlt}></img>
           <div class="card-body text-center">
-              <h5 class="card-title">Ruben Arnold</h5>
+              <h5 class="card-title">{props.title}</h5>
           </div>
       </div>
     </div>
   </>
 );
 
-const Content2 = () => (
-  <>
-    <div class="col-md-4 mb-4">
-        <div class="card ">
-            <img src="./_assets/Steffen_Ahrens-no_logo.png" class="card-img-top" alt="Teammitglied 2"></img>
-            <div class="card-body text-center">
-                <h5 class="card-title">Steffen Ahrens</h5>
-            </div>
-        </div>
-    </div>
-  </>
-);
-
 const Team = () => (
   <>
-    <Wrapper>
-      <TeamHeader />
-      <ContentWrapper>
-        <Content1 />
-        <Content2 />
-      </ContentWrapper>
-    </Wrapper>
+    <WaveTop />
+    <div class='secondary-background'>
+      <section class="container" id="team">
+        <h2 class="text-center mb-4">Vorstand</h2>
+        <div class="row justify-content-center">
+          <Content 
+            imgSrc="./_assets/Ruben_Arnold-no_logo.png"
+            imgSrcAlt="Ruben Arnold"
+            title="Ruben Arnold"
+          />
+          <Content 
+            imgSrc="./_assets/Steffen_Ahrens-no_logo.png"
+            imgSrcAlt="Steffen Ahrens"
+            title="Steffen Ahrens"
+          />
+        </div>
+      </section>
+    </div>
+    <WaveBottom />
   </>
 );
 
