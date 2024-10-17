@@ -2,14 +2,18 @@
 interface CardProps {
   title: string;
   date: string;
+  description: string;
+  link: string;
+
   imgSrc1: string;
   imgSrc2: string;
   imgSrc3: string;
+
   imgSrc1Alt: string;
   imgSrc2Alt: string;
   imgSrc3Alt: string;
-  description: string;
-  link: string;
+
+  id: string;
 }
 
 const CardContent1Image = ( props: CardProps ) => (
@@ -17,24 +21,24 @@ const CardContent1Image = ( props: CardProps ) => (
     <div class="timeline-date px-4 text-center">{props.date}</div>
     <div class="card d-flex flex-column flex-md-row">
       <div class="col-md-6">
-        <img src="{props.imgSrc1}" alt="Handballturnier Kolding 2025" class={props.imgSrc1Alt}></img>
+        <img src={props.imgSrc1} alt={props.imgSrc1Alt} class={props.imgSrc1Alt}></img>
       </div>
       <div class="col-md-6 d-flex flex-column justify-content-center">
         <div class="card-body">
           <h5 class="card-title">{props.title}</h5>
           <p class="card-text">{props.description}</p>
-          <a href="{props.link}" class="btn btn-primary" target="_blank">Unterstützen</a>
+          <a href={props.link} class="btn btn-primary" target="_blank">Unterstützen</a>
         </div>
       </div>
     </div>
   </>
 );
 
-const CardContent2Images = ( props: CardProps ) => (
+const _CardContent2Images = ( props: CardProps ) => (
   <>
     <div class="timeline-date px-4 text-center">{props.date}</div>
     <div class="card d-flex flex-column flex-md-row">
-    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id={props.id} class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
               <div class="carousel-item active">
                   <img src={props.imgSrc1} class="card-img-top" alt={props.imgSrc1Alt} data-bs-toggle="modal" data-bs-target="#Kassieraktion_alle_modal"></img>
@@ -43,11 +47,11 @@ const CardContent2Images = ( props: CardProps ) => (
                   <img src={props.imgSrc2} class="card-img-top" alt={props.imgSrc2Alt} data-bs-toggle="modal" data-bs-target="#Kassieraktion_check_modal"></img>
               </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target={props.id} data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target={props.id} data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
           </button>
@@ -56,7 +60,7 @@ const CardContent2Images = ( props: CardProps ) => (
         <div class="card-body">
           <h5 class="card-title">{props.title}</h5>
           <p class="card-text">{props.description}</p>
-          <a href="{props.description}" class="btn btn-primary" target="_blank">Unterstützen</a>
+          <a href={props.link} class="btn btn-primary" target="_blank">Unterstützen</a>
         </div>
       </div>
     </div>
@@ -67,7 +71,7 @@ const CardContent3Images = ( props: CardProps ) => (
   <>
     <div class="timeline-date px-4 text-center">{props.date}</div>
     <div class="card d-flex flex-column flex-md-row">
-    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id={props.id} class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
               <div class="carousel-item active">
                   <img src={props.imgSrc1} class="card-img-top" alt={props.imgSrc1Alt} data-bs-toggle="modal" data-bs-target="#Kassieraktion_alle_modal"></img>
@@ -79,11 +83,11 @@ const CardContent3Images = ( props: CardProps ) => (
                   <img src={props.imgSrc3} class="card-img-top" alt={props.imgSrc3Alt} data-bs-toggle="modal" data-bs-target="#Kassieraktion_check_modal"></img>
               </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target={props.id} data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target={props.id} data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
           </button>
@@ -92,7 +96,7 @@ const CardContent3Images = ( props: CardProps ) => (
         <div class="card-body">
           <h5 class="card-title">{props.title}</h5>
           <p class="card-text">{props.description}</p>
-          <a href="{props.description}" class="btn btn-primary" target="_blank">Unterstützen</a>
+          <a href={props.link} class="btn btn-primary" target="_blank">Unterstützen</a>
         </div>
       </div>
     </div>
@@ -107,6 +111,7 @@ const Projekte = () => (
         <div class="row justify-content-center">
           <div class="col-md-10 mb-4">
             <CardContent1Image
+              id='Project1'
               title="Internationales Handballturnier Kolding 2025"
               date="19.04. - 20.04.2025 | Erfurt"
               imgSrc1="../_assets/Kolding_Cup_2025.jpeg"
@@ -119,6 +124,7 @@ const Projekte = () => (
               link="https://www.betterplace.org/de/projects/141469-mit-der-handballjugend-zum-kolding-cup-2025"
             />
             <CardContent3Images
+              id='Project2'
               title="Erfolgreiche dm-markt Kassieraktion"
               date="11.10.2024 | Erfurt"
               imgSrc1="../_assets/kassieraktion_bild_alle_2024.jpg"
@@ -131,6 +137,7 @@ const Projekte = () => (
               link=""
             />
             <CardContent1Image
+              id='Project3'
               title="1. Handballcamp des Fördervereins"
               date="30.09. - 02.10.2024 | Erfurt"
               imgSrc1="../_assets/Handballcamp_2024.jpeg"

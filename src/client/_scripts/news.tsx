@@ -4,6 +4,8 @@ import WaveBottom from './wave_bottom.tsx';
 interface CardProps {
   title: string;
   date: string;
+  description: string;
+
   imgSrc1: string;
   imgSrc2: string;
   imgSrc3: string;
@@ -12,7 +14,7 @@ interface CardProps {
   imgSrc2Alt: string;
   imgSrc3Alt: string;
   
-  description: string;
+  id: string;
 }
 
 const NewsCard1Image = (props: CardProps) => (
@@ -20,7 +22,7 @@ const NewsCard1Image = (props: CardProps) => (
     <div class="col-md-5 mb-1">
       <div class="timeline-date px-4">{props.date}</div>
       <div class="card">
-          <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div id={props.id} class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                   <div class="carousel-item active">
                       <img src={props.imgSrc1} class="card-img-top" alt={props.imgSrc1Alt} data-bs-toggle="modal" data-bs-target="#Kassieraktion_alle_modal"></img>
@@ -41,20 +43,20 @@ const NewsCard2Images = (props: CardProps) => (
     <div class="col-md-5 mb-1">
       <div class="timeline-date px-4">{props.date}</div>
       <div class="card">
-          <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div id={props.id} class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img src={props.imgSrc1} class="card-img-top" alt={props.imgSrc1Alt} data-bs-toggle="modal" data-bs-target="#Kassieraktion_alle_modal"></img>
+                      <img src={props.imgSrc1} class="card-img-top" alt={props.imgSrc1Alt} data-bs-toggle="modal" data-bs-target="#NewsCard2Images1"></img>
                   </div>
                   <div class="carousel-item">
-                      <img src={props.imgSrc2} class="card-img-top" alt={props.imgSrc2Alt} data-bs-toggle="modal" data-bs-target="#Kassieraktion_check_modal"></img>
+                      <img src={props.imgSrc2} class="card-img-top" alt={props.imgSrc2Alt} data-bs-toggle="modal" data-bs-target="#NewsCard2Images2"></img>
                   </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target={props.id} data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target={props.id} data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
               </button>
@@ -73,23 +75,23 @@ const NewsCard3Images = (props: CardProps) => (
     <div class="col-md-5 mb-1">
       <div class="timeline-date px-4">{props.date}</div>
       <div class="card">
-          <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div id={props.id} class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img src={props.imgSrc1} class="card-img-top" alt={props.imgSrc1Alt} data-bs-toggle="modal" data-bs-target="#Kassieraktion_alle_modal"></img>
+                      <img src={props.imgSrc1} class="card-img-top" alt={props.imgSrc1Alt} data-bs-toggle="modal" data-bs-target="#NewsCard2Images3"></img>
                   </div>
                   <div class="carousel-item">
-                      <img src={props.imgSrc2} class="card-img-top" alt={props.imgSrc2Alt} data-bs-toggle="modal" data-bs-target="#Kassieraktion_check_modal"></img>
+                      <img src={props.imgSrc2} class="card-img-top" alt={props.imgSrc2Alt} data-bs-toggle="modal" data-bs-target="#NewsCard2Images4"></img>
                   </div>
                   <div class="carousel-item">
-                      <img src={props.imgSrc3} class="card-img-top" alt={props.imgSrc3Alt} data-bs-toggle="modal" data-bs-target="#Kassieraktion_pdf_modal"></img>
+                      <img src={props.imgSrc3} class="card-img-top" alt={props.imgSrc3Alt} data-bs-toggle="modal" data-bs-target="#NewsCard2Images5"></img>
                   </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target={props.id} data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target={props.id} data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
               </button>
@@ -117,6 +119,7 @@ const News = () => (
         <h2 class="text-center mb-3">News & Aktuelles</h2>
         <div class="row justify-content-center">
           <NewsCard2Images
+              id='News1'
               title="Förderverein meets JUMPING FITNESS"
               date="Jeden Montag 16.00-16.45"
               imgSrc1="./_assets/Förderverein_JUMPING_Fitness.jpg"
@@ -129,6 +132,7 @@ const News = () => (
 Wer Lust hat sich auszupowern und „auf Touren“ zu kommen kann sich gerne bei uns melden. Wir sind auf jeden Fall das nächste Mal wieder dabei."
           />
           <NewsCard3Images
+              id='News2'
               title="Erfolgreiche dm-markt Kassieraktion"
               date="11.10.2024 | Erfurt"
               imgSrc1="./_assets/kassieraktion_bild_alle_2024.jpg"
@@ -140,6 +144,7 @@ Wer Lust hat sich auszupowern und „auf Touren“ zu kommen kann sich gerne bei
               description="Ein großes Dankeschön geht an den dm-Markt im Thüringen Park Erfurt. In einer bisher einmaligen Aktion und mit Unterstützung der Bundesliga Profis Julie Holm & Josefine Hanfland sowie 12 Nachwuchshandballerinnen wurde in einer 2-stündigen Aktion eine unfassbare Summe von 5.700 EUR erwirtschaftet. Die Summe wird zu 100% an den Förderverein gespendet. DANKE an alle Beteiligten, die diese Aktion so erfolgreich gemacht haben."
             />
             <NewsCard1Image
+              id='News3'
               title="Internationales Handballturnier Kolding 2025"
               date="19.04 - 20.04.2025 | Erfurt"
               imgSrc1="./_assets/Kolding_Cup_2025.jpeg"
@@ -151,6 +156,7 @@ Wer Lust hat sich auszupowern und „auf Touren“ zu kommen kann sich gerne bei
               description="Wir wollen den Mädchen der D-Jugend des THC die Teilnahme an einem der größten Handballturniere ermöglichen."
             />
             <NewsCard1Image
+              id='News4'
               title="Neue Leibchen für den Nachwuchs"
               date="2024 | Erfurt"
               imgSrc1="./_assets/neue-leibchen-2024.jpg"
