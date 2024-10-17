@@ -10,7 +10,7 @@ const Card = ( props: CardProps ) => (
   <>
     <h3 class="card-title" id="statutes">{props.title}</h3>
     <p class="card-text">{props.description}</p>
-    <a href={props.link} class="btn btn-primary">{props.linkTitle}</a>
+    <a href={props.link} class="btn btn-primary" download>{props.linkTitle}</a>
   </>
 );
 

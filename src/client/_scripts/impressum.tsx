@@ -19,7 +19,7 @@ const ImpressumContent = () => (
     <p class="eingerückt m-0">99092 Erfurt</p>
     <p class="eingerückt">Deutschland</p> */}
     <p class='m-0'>Ansprechpartner: Steffi Günther</p>
-    <p>Telefon: +49 176 44415740</p>
+    <a href='tel:+4917644415740' class='mb-3'>Telefon: +49 176 44415740</a>
     <p>Email: info@whn-thueringen.de</p>
     <p>Vertreten durch: Ruben Arnold & Steffen Ahrens</p>
     <p>StNr.: 151/141/20933</p>

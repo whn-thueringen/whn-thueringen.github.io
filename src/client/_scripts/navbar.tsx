@@ -29,7 +29,7 @@ const Navbar = () => (
         imgSrc="https://raw.githubusercontent.com/whn-thueringen/whn-thueringen.github.io/refs/heads/main/src/client/_assets/FWHN_Logo_final_fu%CC%88r_Hintergrund_hell.svg"
         imgSrcAlt="WHN Thüringen Logo" 
       />
-      <h4 class="mt-2 me-3">FWHN Thüringen</h4>
+      <h4 class="mt-2 me-3">FwHn Thüringen</h4>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
