@@ -23,6 +23,7 @@ const BankDetailsCard = (props: BankDetailsProps) => {
       <div class="row align-items-center">
         <div class="text-center mt-2 mb-2">
           <h5>QR-Code</h5>
+          <p>Einfach mit ihrer Bank App scannen!</p>
           <img src={props.qrCodeSrc} class="img-fluid rounded-start" alt="QR Code" />
         </div>
         <div class="col">

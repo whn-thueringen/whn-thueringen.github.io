@@ -8,6 +8,7 @@ import SponsorSlider from "./sponsor_slider.tsx";
 import News from "./news.tsx";
 import Team from "./team.tsx"; 
 import Bankverbindung from './bankverbindung.tsx';
+import Modals from "./modals.tsx"
 
 function App(): JSX.Element {
   return (
@@ -20,6 +21,7 @@ function App(): JSX.Element {
       <Team />
       <Bankverbindung />
       <Impressum />
+      <Modals />
     </>
   );
 }

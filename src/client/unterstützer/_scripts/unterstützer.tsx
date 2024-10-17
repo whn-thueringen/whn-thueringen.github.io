@@ -8,7 +8,7 @@ interface CardProps {
 const Card = ( props: CardProps ) => (
   <div class="col-md-4 mb-4">
     <div class="card text-center">
-      <img src={props.imgSrc} class="card-img-top p-2" alt={props.imgSrcAlt}></img>
+      <img src={props.imgSrc} class="card-img-top p-2" alt={props.imgSrcAlt} loading="lazy"></img>
       <div class="card-body">
         <h5 class="card-title"><a href={props.link} target="_blank">{props.title}</a></h5>
         <p class="card-text"></p>
@@ -23,13 +23,13 @@ const Unterstützer = () => (
     <div class="row justify-content-center">
       <Card
       title="Avenida Therme Hohenfelden"
-      imgSrc="../_assets/logo_avenida_therme.png"
+      imgSrc="../_assets/images/logo_avenida_therme.webp"
       imgSrcAlt="Avenida Therme Hohenfelden"
       link="https://www.avenida-therme.de"
       />
       <Card
       title="Heinze & Kollegen Finanzberatung"
-      imgSrc="../_assets/Logo_Heinze-Kollegen_Website.png"
+      imgSrc="../_assets/images/Logo_Heinze-Kollegen_Website.webp"
       imgSrcAlt="Heinze & Kollegen Finanzberatung"
       link="https://hk-finanzberatung.de/"
       />
