@@ -30,6 +30,16 @@ const Dokumente = () => (
     <div class="card">
       <div class="card-body">
         <Card
+        title='Antrag auf Fördermittel'
+        description='Hier befindet sich der Antrag auf Zuschuss oder Kostenübernahme durch den Förderverein.'
+        link='..\_assets\downloads/Fördermittel Förderverein.pdf'
+        linkTitle='Download Antrag auf Fördermittel'
+        />
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <Card
         title='Eintragung'
         description='Hier kannst du die Eintragung finden.'
         link='..\_assets\downloads\Eintragung Förderverein Wahn Thüringen e. V. .pdf'
