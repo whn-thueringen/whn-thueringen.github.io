@@ -85,14 +85,18 @@ const News = () => (
         <h2 class="text-center mb-3">News & Aktuelles</h2>
         <div class="row justify-content-center">
         <NewsCard
-              id='News1'
-              target="#News1"
+              id='News5'
+              target="#News5"
               title="\u{201e}Girls Cup\u{201c} \u{1f93e}"
-              date="Jeden Montag 16.00-16.45"
+              date="27.10.2024 | Erfurt"
               description="Am vergangenen Sonntag fand das erste selbst organisierte  Turnier des F\u{00f6}rderverein weiblicher Handballnachwuchs Th\u{00fc}ringen e.V. statt. Sechs Mannschaften (HC Leipzig, TUS Dieskau, HSG Saalfeld und THC) traten gegen einander an und schenkten sich dabei nichts. Die mitgereisten Fans und zahlreiche Zuschauer sorgten f\u{00fc}r ordentlich Stimmung in der \u{201e}Blechb\u{00fc}chse\u{201c}. Am Ende des Tages nahm der TUS Dieskau den Pokal \u{1f3c6} mit nach Hause. Danke an alle Vereine, die die Anreise auf sich genommen haben. Fortsetzung folgt \u{1f596}."
               images={[
-                { src: "webp", alt: "Bild", modalId: "#NewsModal6" },
-                { src: "webp", alt: "Bild", modalId: "#NewsModal7" }
+                { src: "./_assets/images/Hallenbild_2024_1.webp", alt: "Bild: Hallenbild", modalId: "#NewsModal8" },
+                { src: "./_assets/images/Hallenbild_2024_1.webp", alt: "Bild: Hallenbild", modalId: "#NewsModal9" },
+                { src: "./_assets/images/Hallenbild_2024_1.webp", alt: "Bild: Hallenbild", modalId: "#NewsModal10" },
+                { src: "./_assets/images/Hallenbild_2024_1.webp", alt: "Bild: Hallenbild", modalId: "#NewsModal11" },
+                { src: "./_assets/images/Hallenbild_2024_1.webp", alt: "Bild: Hallenbild", modalId: "#NewsModal12" },
+                { src: "./_assets/images/Hallenbild_2024_1.webp", alt: "Bild: Hallenbild", modalId: "#NewsModal13" },
               ]}
             />
           <NewsCard
