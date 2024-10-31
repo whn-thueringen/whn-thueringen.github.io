@@ -16,7 +16,7 @@
   "importMap": "./config/import_map.json",
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "esnext", 
     "experimentalDecorators": true,
     "lib": [
       "esnext",
