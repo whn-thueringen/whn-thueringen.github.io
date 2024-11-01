@@ -1,25 +1,5 @@
-<script lang="ts">
-  import { onMount } from 'svelte';
-
+<script>
   import FWHNLogo from '$lib/assets/FWHN_Logo_final_für_Hintergrund_hell.svg';
-
-  let isCollapsed = true;
-
-  const toggleCollapse = () => {
-    isCollapsed = !isCollapsed;
-  };
-
-  onMount(() => {
-    const toggleButton = document.querySelector('.navbar-toggler');
-    
-    if (toggleButton) {
-      toggleButton.addEventListener('click', toggleCollapse);
-      
-      return () => {
-        toggleButton.removeEventListener('click', toggleCollapse);
-      };
-    }
-  });
 </script>
 
 <nav class="navbar navbar-expand-lg p-2">
@@ -29,16 +9,17 @@
     </a>
     <h4 class="mt-2 me-3">FwHn Thüringen</h4>
     <button 
-      class="navbar-toggler text-dark" 
+      class="navbar-toggler justify-content-center" 
       type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" 
       aria-controls="navbarNav" 
-      aria-expanded="{!isCollapsed}" 
+      aria-expanded="false" 
       aria-label="Toggle navigation"
-      on:click={toggleCollapse}
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon text-dark"><i class='bx bx-menu'></i></span>
     </button>
-    <div class={`collapse navbar-collapse ${isCollapsed ? 'hide' : 'show'}`} id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link rounded pe-2 ps-2 mt-2 me-2" href="/#News">News & Aktuelles</a>
