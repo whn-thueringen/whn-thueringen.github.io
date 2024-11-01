@@ -1,62 +1,38 @@
-# Template
-Template for Frontend development. Build a web page using [SolidJS](https://solidjs.com) and [Deno](https://deno.land).
+# sv
 
-[![Run Linter](https://github.com/JavaScriptPlayground/Template/actions/workflows/lint.yml/badge.svg)](https://github.com/JavaScriptPlayground/Template/actions/workflows/lint.yml)
-[![Run Unit Tests](https://github.com/JavaScriptPlayground/Template/actions/workflows/test.yml/badge.svg)](https://github.com/JavaScriptPlayground/Template/actions/workflows/test.yml)
-[![Deploy GitHub Pages](https://github.com/JavaScriptPlayground/Template/actions/workflows/deployment.yml/badge.svg)](https://github.com/JavaScriptPlayground/Template/actions/workflows/deployment.yml)
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Overview
+## Creating a project
 
-- `.gitignore` Git ignore file.
-- `deno.json` [Deno configuration](https://docs.deno.com/runtime/manual/getting_started/configuration_file) file. Only
-  change this if you know what you are doing.
-- `LICENSE` License file.
-- `README.md` This file.
-- `.github` [GitHub configuration](https://www.freecodecamp.org/news/how-to-use-the-dot-github-repository/) directory.
-- `config` Project specific config files (not part of sourcecode).
-  - `deno.lock` Lock file for all dependencies.
-  - `import_map.json` [Import map](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap) for all imports.
-  - `build` Build configuration files.
-    - `index.ts` Build configuration for [esbuild](https://esbuild.github.io). Only change this if you know what you are doing.
-  - `types` Project type declarations.
-    - `...` Declaration.
-- `doc` Documentation for the page.
-  - `...` Doc.
-- `src` All sourcecode.
-  - `client` Sourcecode for the client.
-    - `index.html` Page itself.
-    - `_assets` Page assets like images, vector graphics, etc.
-      - `favicon.svg` Favicon for the page
-      - `...` Assets.
-    - `_components` Page components/elements.
-      - `...` Components/Elements.
-    - `_scripts` Page scripts. This directory must have a index.ts file as entry point.
-      - `index.ts` Page script entry file.
-      - `...` Scripts.
-    - `_styles` Page styles. This directory must have a index.scss file as entry point.
-      - `index.scss` Page style entry file.
-      - `...` Styles.
-    - `...` A subpage as a folder containing the same folder structure as `client`. `...` can have any name. It is
-      recommended to not start with a `_` as these directories are reserved for the page itself.
-  - `server` Sourcecode for the server.
-    - `...` Server files.
-- `test` Tests (no unit tests).
-  - `e_to_e` End to End tests for the page.
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Usage
+```bash
+# create a new project in the current directory
+npx sv create
 
-### Tasks
+# create a new project in my-app
+npx sv create my-app
+```
 
-Use `deno task <name_of_the_task>`:
+## Developing
 
-- `build` Build the page. *(recommended)*
-- `build:watch` Build the page with active file watcher. *(recommended)*
-- `build:dev` Build the page for development (without optimization like minification).
-- `build:dev:watch` Build the page for development (without optimization like minification) with active file watcher.
-- `serve` *Not implemented yet (currently does nothing)*
-- `lint` Lint the sourcecode
-- `test` Test your sourcecode (all `.test.ts` file will be checked). A junit report gets generated to `./reports/report.xml`
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## License
+```bash
+npm run dev
 
-GPL Version 3.0 Copyright (C) 2024 Max
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
