@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -13,9 +14,14 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/platepilot.github.io' : '',
+			base: process.env.NODE_ENV === 'production' ? '/whn-thueringen.github.io' : '',
 		}
-	}
+	},
+	preprocess: preprocess({
+    scss: {
+			prependData: '@import "src/app.scss" as *;'
+    },
+  })
 };
 
 export default config;
