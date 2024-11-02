@@ -1,31 +1,57 @@
-name: Deploy SvelteKit to GitHub Pages
+name: Deploy GitHub Page
 
 on:
   push:
-    branches:
-      - svelte
+    branches: 'svelte'
 
 jobs:
-  deploy:
+  build_site:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
+      # - name: Install pnpm
+      #   uses: pnpm/action-setup@v2
+      #   with:
+      #     version: 8
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: 18
+          cache: npm
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build SvelteKit app
-        run: npm run build
+      - name: build
+        env:
+          BASE_PATH: '/whn-thueringen.de'
+        run: |
+          npm run build
+          touch build/.nojekyll
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          publish_branch: gh-pages
+          # this should match the `pages` option in your adapter-static options
+          path: 'build/'
+
+  deploy:
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
