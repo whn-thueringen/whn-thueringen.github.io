@@ -27,4 +27,6 @@ const config = {
   })
 };
 
+config.paths = { base: process.argv.includes('dev') ? '' : "/whn-thueringen.github.io" }
+
 export default config;
