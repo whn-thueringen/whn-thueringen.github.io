@@ -15,9 +15,6 @@ const config = {
     }),
     paths: {
       base: dev ? '' : '/whn-thueringen.github.io',
-    },
-    prerender: {
-      default: true
     }
   },
   preprocess: vitePreprocess()
