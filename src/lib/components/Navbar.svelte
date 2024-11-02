@@ -24,22 +24,22 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="$base/#News">News & Aktuelles</a>
+          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="{base}/#News">News & Aktuelles</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="$base/projekte/">Projekte</a>
+          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="{base}/projekte/">Projekte</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="$base/unterstützer">Unterstützer</a>
+          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="{base}/unterstützer">Unterstützer</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="$base/dokumente/">Dokumente</a>
+          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="{base}/dokumente/">Dokumente</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="$base/#team">Vorstand</a>
+          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="{base}/#team">Vorstand</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="$base/#Impressum">Impressum</a>
+          <a class="nav-link rounded pe-2 ps-2 mt-2 me-2 text-dark" href="{base}/#Impressum">Impressum</a>
         </li>
       </ul>
     </div>
