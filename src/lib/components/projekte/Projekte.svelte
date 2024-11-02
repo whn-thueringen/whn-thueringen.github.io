@@ -23,7 +23,6 @@
     <div class="row justify-content-center">
       <div class="col-md-10 mb-4">
         <ProjectCard
-          id="Project4"
           target="Project4"
           title="„Girls Cup“ 🤾🏼‍♀️"
           date="27.10.2024 | Erfurt"
@@ -41,7 +40,6 @@
           ]}
         />
         <ProjectCard
-          id="Project1"
           target="Project1"
           title="Internationales Handballturnier Kolding 2025"
           date="19.04. - 20.04.2025 | Erfurt"
@@ -54,7 +52,6 @@
           ]}
         />
         <ProjectCard
-          id="Project2"
           target="Project2"
           title="Erfolgreiche dm-markt Kassieraktion"
           date="11.10.2024 | Erfurt"
@@ -69,7 +66,6 @@
           ]}
         />
         <ProjectCard
-          id="Project3"
           target="Project3"
           title="1. Handballcamp des Fördervereins"
           date="30.09. - 02.10.2024 | Erfurt"

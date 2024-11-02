@@ -10,7 +10,6 @@
   export let linkClass;
   export let linkText;
   export let target;
-  export let id;
 </script>
 
 <div class="timeline-date px-4 text-center">{date}</div>

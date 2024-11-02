@@ -1,5 +1,5 @@
 <script>
-  import FWHNLogo from '$lib/assets/FWHN_Logo_final_für_Hintergrund_hell.svg';
+  import FWHNLogo from '$lib/assets/favicon.svg';
 </script>
 
 <nav class="navbar navbar-expand-lg p-2">
