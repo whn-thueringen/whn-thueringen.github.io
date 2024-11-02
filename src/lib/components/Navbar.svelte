@@ -6,6 +6,7 @@
 
 <nav class="navbar navbar-expand-lg p-2">
   <div class="container-fluid">
+    <!-- svelte-ignore a11y_consider_explicit_label -->
     <a class="navbar-brand" href="{base}">
       <enhanced:img src={FWHNLogo} alt="WHN Thüringen Logo" class="svg-small" style="max-width: 150px;" aria-label="home"/>
     </a>

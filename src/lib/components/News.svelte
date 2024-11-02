@@ -25,7 +25,6 @@
   interface Image {
     src: string;
     alt: string;
-    modalId: string;
   }
 
   interface CardProps {
@@ -43,12 +42,12 @@
       title: '„Girls Cup“ 🤾',
       description: 'Am vergangenen Sonntag fand das erste selbst organisierte Turnier des Förderverein weiblicher Handballnachwuchs Thüringen e.V. statt. Sechs Mannschaften (HC Leipzig, TUS Dieskau, HSG Saalfeld und THC) traten gegeneinander an und schenkten sich dabei nichts. Die mitgereisten Fans und zahlreiche Zuschauer sorgten für ordentlich Stimmung in der „Blechbüchse“. Am Ende des Tages nahm der TUS Dieskau den Pokal 🏆 mit nach Hause. Danke an alle Vereine, die die Anreise auf sich genommen haben. Fortsetzung folgt ✋.',
       images: [
-        { src: Hallenbild_2024_1 , alt: 'Bild: Hallenbild 1', modalId: '#NewsModal8' },
-        { src: Hallenbild_2024_2 , alt: 'Bild: Hallenbild 2', modalId: '#NewsModal9' },
-        { src: Hallenbild_2024_3 , alt: 'Bild: Hallenbild 3', modalId: '#NewsModal10' },
-        { src: Hallenbild_2024_4 , alt: 'Bild: Hallenbild 4', modalId: '#NewsModal11' },
-        { src: Hallenbild_2024_5 , alt: 'Bild: Hallenbild 5', modalId: '#NewsModal12' },
-        { src: Hallenbild_2024_6 , alt: 'Bild: Hallenbild 6', modalId: '#NewsModal13' },
+        { src: Hallenbild_2024_1 , alt: 'Bild: Hallenbild 1'},
+        { src: Hallenbild_2024_2 , alt: 'Bild: Hallenbild 2'},
+        { src: Hallenbild_2024_3 , alt: 'Bild: Hallenbild 3'},
+        { src: Hallenbild_2024_4 , alt: 'Bild: Hallenbild 4'},
+        { src: Hallenbild_2024_5 , alt: 'Bild: Hallenbild 5'},
+        { src: Hallenbild_2024_6 , alt: 'Bild: Hallenbild 6'},
       ]
     },
     {
@@ -57,8 +56,8 @@
       title: 'Förderverein meets JUMPING FITNESS',
       description: '„Richtig cool“, so das Feedback der Kinder und Eltern, die heute erstmals am JUMPING FITNESS im EASYFITNESS in Erfurt teilgenommen. Jeden Montag von 16.00-16.45 Uhr findet ein Kurs von jung bis alt statt. Wer Lust hat sich auszupowern und „auf Touren“ zu kommen kann sich gerne bei uns melden. Wir sind auf jeden Fall das nächste Mal wieder dabei.',
       images: [
-        { src: Förderverein_JUMPING_Fitness , alt: 'Bild: Förderverein JUMPING Fitness', modalId: '#NewsModal6' },
-        { src: Pennewiss_Fitness_Instagram, alt: 'Bild: Pennewiss Fitness Instagram', modalId: '#NewsModal7' }
+        { src: Förderverein_JUMPING_Fitness , alt: 'Bild: Förderverein JUMPING Fitness'},
+        { src: Pennewiss_Fitness_Instagram, alt: 'Bild: Pennewiss Fitness Instagram'}
       ]
     },
     {
@@ -67,9 +66,9 @@
       title: 'Erfolgreiche dm-markt Kassieraktion',
       description: 'Ein großes Dankeschön geht an den dm-Markt im Thüringen Park Erfurt. In einer bisher einmaligen Aktion und mit Unterstützung der Bundesliga Profis Julie Holm & Josefine Hanfland sowie 12 Nachwuchshandballerinnen wurde in einer 2-stündigen Aktion eine unfassbare Summe von 5.700 EUR erwirtschaftet. Die Summe wird zu 100% an den Förderverein gespendet. DANKE an alle Beteiligten, die diese Aktion so erfolgreich gemacht haben.',
       images: [
-        { src: kassieraktion_bild_alle_2024 , alt: 'Bild: Kassieraktion', modalId: '#NewsModal3' },
-        { src: drogerie_markt_spende_check_2024 , alt: 'Bild: Kassieraktion Check', modalId: '#NewsModal4' },
-        { src: pdf_kassieraktion_2024 , alt: 'Bild: Pdf Kassieraktion', modalId: '#NewsModal5' }
+        { src: kassieraktion_bild_alle_2024 , alt: 'Bild: Kassieraktion'},
+        { src: drogerie_markt_spende_check_2024 , alt: 'Bild: Kassieraktion Check'},
+        { src: pdf_kassieraktion_2024 , alt: 'Bild: Pdf Kassieraktion'}
       ]
     },
     {
@@ -78,7 +77,7 @@
       title: 'Internationales Handballturnier Kolding 2025',
       description: 'Wir wollen den Mädchen der D-Jugend des THC die Teilnahme an einem der größten Handballturniere ermöglichen.',
       images: [
-        { src: Kolding_Cup_2025 , alt: 'Bild: Kolding Cup 2025', modalId: '#NewsModal1' }
+        { src: Kolding_Cup_2025 , alt: 'Bild: Kolding Cup 2025'}
       ]
     },
     {
@@ -87,7 +86,7 @@
       title: 'Neue Leibchen für den Nachwuchs',
       description: 'Die Leibchen sind bereits im Einsatz, da die Mädels auch in den Ferien fleißig trainiert haben.',
       images: [
-        { src: neue_leibchen_2024, alt: 'Bild: Neue Leibchen 2024', modalId: '#NewsModal2' }
+        { src: neue_leibchen_2024, alt: 'Bild: Neue Leibchen 2024'}
       ]
     }
   ];
@@ -111,8 +110,6 @@
                       src={image.src}
                       class="card-img-top-content"
                       alt={image.alt}
-                      data-bs-toggle="modal"
-                      data-bs-target={image.modalId}
                     />
                   </div>
                 {/each}
