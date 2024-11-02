@@ -7,7 +7,7 @@
 <nav class="navbar navbar-expand-lg p-2">
   <div class="container-fluid">
     <a class="navbar-brand" href="{base}">
-      <enhanced:img src={FWHNLogo} alt="WHN Thüringen Logo" class="svg-small" style="max-width: 150px;" />
+      <enhanced:img src={FWHNLogo} alt="WHN Thüringen Logo" class="svg-small" style="max-width: 150px;" aria-label="home"/>
     </a>
     <h4 class="mt-2 me-3">FwHn Thüringen</h4>
     <button 
