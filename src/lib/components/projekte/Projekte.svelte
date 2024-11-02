@@ -1,20 +1,15 @@
 <script>
   import ProjectCard from './Card.svelte';
 
-  import Hallenbild_2024_1 from '$lib/assets/images/Hallenbild_2024_1.webp';
-  import Hallenbild_2024_2 from '$lib/assets/images/Hallenbild_2024_2.webp';
-  import Hallenbild_2024_3 from '$lib/assets/images/Hallenbild_2024_3.webp';
-  import Hallenbild_2024_4 from '$lib/assets/images/Hallenbild_2024_4.webp';
-  import Hallenbild_2024_5 from '$lib/assets/images/Hallenbild_2024_5.webp';
-  import Hallenbild_2024_6 from '$lib/assets/images/Hallenbild_2024_6.webp';
+  import { base } from '$app/paths';
 
-  import Kolding_Cup_2025 from '$lib/assets/images/Kolding_Cup_2025.webp';
+  import Kolding_Cup_2025 from '/images/Kolding_Cup_2025.webp';
 
-  import kassieraktion_bild_alle_2024 from '$lib/assets/images/kassieraktion_bild_alle_2024.webp';
-  import drogerie_markt_spende_check_2024 from '$lib/assets/images/drogerie_markt_spende_check_2024.webp';
-  import pdf_kassieraktion_2024 from '$lib/assets/images/pdf_kassieraktion_2024.webp';
+  import kassieraktion_bild_alle_2024 from '/images/kassieraktion_bild_alle_2024.webp';
+  import drogerie_markt_spende_check_2024 from '/images/drogerie_markt_spende_check_2024.webp';
+  import pdf_kassieraktion_2024 from '/images/pdf_kassieraktion_2024.webp';
 
-  import Handballcamp_2024 from '$lib/assets/images/Handballcamp_2024.webp';
+  import Handballcamp_2024 from '/images/Handballcamp_2024.webp';
 </script>
 
 <div>
@@ -31,12 +26,12 @@
           linkText=""
           linkClass=""
           images={[
-            { src: Hallenbild_2024_1 , alt: "Hallenbild_2024_1", modalId: "#NewsModal7" },
-            { src: Hallenbild_2024_2, alt: "Hallenbild_2024_1", modalId: "#NewsModal8" },
-            { src: Hallenbild_2024_3, alt: "Hallenbild_2024_1", modalId: "#NewsModal9" },
-            { src: Hallenbild_2024_4, alt: "Hallenbild_2024_1", modalId: "#NewsModal10" },
-            { src: Hallenbild_2024_5, alt: "Hallenbild_2024_1", modalId: "#NewsModal11" },
-            { src: Hallenbild_2024_6, alt: "Hallenbild_2024_1", modalId: "#NewsModal12" }
+        { src: `${base}/images/Hallenbild_2024_1.webp`, alt: 'Bild: Hallenbild 1' },
+        { src: `${base}/images/Hallenbild_2024_2.webp`, alt: 'Bild: Hallenbild 2' },
+        { src: `${base}/images/Hallenbild_2024_3.webp`, alt: 'Bild: Hallenbild 3' },
+        { src: `${base}/images/Hallenbild_2024_4.webp`, alt: 'Bild: Hallenbild 4' },
+        { src: `${base}/images/Hallenbild_2024_5.webp`, alt: 'Bild: Hallenbild 5' },
+        { src: `${base}/images/Hallenbild_2024_6.webp`, alt: 'Bild: Hallenbild 6' },
           ]}
         />
         <ProjectCard
@@ -48,7 +43,7 @@
           linkText="Unterstützen"
           linkClass="btn-own"
           images={[
-            { src: Kolding_Cup_2025, alt: "Kolding Cup 2025", modalId: "#NewsModal6" }
+        { src: `${base}/images/Kolding_Cup_2025.webp` , alt: 'Bild: Kolding Cup 2025'}
           ]}
         />
         <ProjectCard
@@ -60,9 +55,9 @@
           linkText=""
           linkClass=""
           images={[
-            { src: kassieraktion_bild_alle_2024, alt: "Bild: Kassieraktion", modalId: "#NewsModal3" },
-            { src: drogerie_markt_spende_check_2024, alt: "Bild: Kassieraktion Check", modalId: "#NewsModal4" },
-            { src: pdf_kassieraktion_2024, alt: "Bild: Pdf Kassieraktion", modalId: "#NewsModal5" }
+        { src: `${base}/images/kassieraktion_bild_alle_2024.webp` , alt: `Bild: Kassieraktion`},
+        { src: `${base}/images/drogerie_markt_spende_check_2024.webp` , alt: `Bild: Kassieraktion Check`},
+        { src: `${base}/images/pdf_kassieraktion_2024.webp` , alt: `Bild: Pdf Kassieraktion`}
           ]}
         />
         <ProjectCard
@@ -74,7 +69,7 @@
           linkText=""
           linkClass=""
           images={[
-            { src: Handballcamp_2024, alt: "Bild", modalId: "#ProjectModal1" }
+            { src: `${base}/images/Handballcamp_2024.webp`, alt: "Bild", modalId: "#ProjectModal1" }
           ]}
         />
       </div>

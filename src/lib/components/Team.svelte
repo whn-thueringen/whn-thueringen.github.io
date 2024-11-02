@@ -2,8 +2,7 @@
   import WaveTop from './WaveTop.svelte';
   import WaveBottom from './WaveBottom.svelte';
 
-  import Ruben_Arnold from '$lib/assets/images/Ruben_Arnold-no_logo.webp';
-  import Steffen_Ahrens from '$lib/assets/images/Steffen_Ahrens-no_logo.webp';
+  import { base } from '$app/paths';
 
   interface ContentProps {
     imgSrc: string;
@@ -13,12 +12,12 @@
 
   const contents: ContentProps[] = [
     {
-      imgSrc: Ruben_Arnold,
+      imgSrc: `${base}/images/Ruben_Arnold-no_logo.webp`,
       imgSrcAlt: 'Ruben Arnold',
       title: 'Ruben Arnold',
     },
     {
-      imgSrc: Steffen_Ahrens,
+      imgSrc: `${base}/images/Steffen_Ahrens-no_logo.webp`,
       imgSrcAlt: 'Steffen Ahrens',
       title: 'Steffen Ahrens',
     },

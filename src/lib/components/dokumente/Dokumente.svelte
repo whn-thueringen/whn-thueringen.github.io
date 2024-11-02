@@ -1,13 +1,13 @@
 <script>
   import Card from './Card.svelte';
 
-  import gemeinnuetzige_einrichungen from '$lib/assets/downloads/Gemeinnützigkeit Förderverein FA Erfurt .pdf';
+  import gemeinnuetzige_einrichungen from '/downloads/Gemeinnützigkeit Förderverein FA Erfurt .pdf';
 
-  import fördermittel from '$lib/assets/downloads/Fördermittel Förderverein.pdf';
+  import fördermittel from '/downloads/Fördermittel Förderverein.pdf';
 
-  import eintragung from '$lib/assets/downloads/Eintragung Förderverein Wahn Thüringen e. V. .pdf';
+  import eintragung from '/downloads/Eintragung Förderverein Wahn Thüringen e. V. .pdf';
 
-  import satzung from '$lib/assets/downloads//Satzung FwHT - Förderverein des weiblichen Handballnachwuchses Thüringen e.V..pdf';
+  import satzung from '/downloads/Satzung FwHT - Förderverein des weiblichen Handballnachwuchses Thüringen e.V..pdf';
 
 </script>
 

@@ -2,24 +2,6 @@
   import WaveTop from "./WaveTop.svelte";
   import WaveBottom from "./WaveBottom.svelte";
 
-  import Hallenbild_2024_1 from '$lib/assets/images/Hallenbild_2024_1.webp';
-  import Hallenbild_2024_2 from '$lib/assets/images/Hallenbild_2024_2.webp';
-  import Hallenbild_2024_3 from '$lib/assets/images/Hallenbild_2024_3.webp';
-  import Hallenbild_2024_4 from '$lib/assets/images/Hallenbild_2024_4.webp';
-  import Hallenbild_2024_5 from '$lib/assets/images/Hallenbild_2024_5.webp';
-  import Hallenbild_2024_6 from '$lib/assets/images/Hallenbild_2024_6.webp';
-
-  import Förderverein_JUMPING_Fitness from '$lib/assets/images/Förderverein_JUMPING_Fitness.webp';
-  import Pennewiss_Fitness_Instagram from '$lib/assets/images/Pennewiss_Fitness_Instagram.webp';
-
-  import Kolding_Cup_2025 from '$lib/assets/images/Kolding_Cup_2025.webp';
-
-  import kassieraktion_bild_alle_2024 from '$lib/assets/images/kassieraktion_bild_alle_2024.webp';
-  import drogerie_markt_spende_check_2024 from '$lib/assets/images/drogerie_markt_spende_check_2024.webp';
-  import pdf_kassieraktion_2024 from '$lib/assets/images/pdf_kassieraktion_2024.webp';
-
-  import neue_leibchen_2024 from '$lib/assets/images/neue-leibchen-2024.webp';
-
   import { base } from '$app/paths';
 
   interface Image {
@@ -42,12 +24,12 @@
       title: '„Girls Cup“ 🤾',
       description: 'Am vergangenen Sonntag fand das erste selbst organisierte Turnier des Förderverein weiblicher Handballnachwuchs Thüringen e.V. statt. Sechs Mannschaften (HC Leipzig, TUS Dieskau, HSG Saalfeld und THC) traten gegeneinander an und schenkten sich dabei nichts. Die mitgereisten Fans und zahlreiche Zuschauer sorgten für ordentlich Stimmung in der „Blechbüchse“. Am Ende des Tages nahm der TUS Dieskau den Pokal 🏆 mit nach Hause. Danke an alle Vereine, die die Anreise auf sich genommen haben. Fortsetzung folgt ✋.',
       images: [
-        { src: Hallenbild_2024_1 , alt: 'Bild: Hallenbild 1'},
-        { src: Hallenbild_2024_2 , alt: 'Bild: Hallenbild 2'},
-        { src: Hallenbild_2024_3 , alt: 'Bild: Hallenbild 3'},
-        { src: Hallenbild_2024_4 , alt: 'Bild: Hallenbild 4'},
-        { src: Hallenbild_2024_5 , alt: 'Bild: Hallenbild 5'},
-        { src: Hallenbild_2024_6 , alt: 'Bild: Hallenbild 6'},
+        { src: `${base}/images/Hallenbild_2024_1.webp`, alt: 'Bild: Hallenbild 1' },
+        { src: `${base}/images/Hallenbild_2024_2.webp`, alt: 'Bild: Hallenbild 2' },
+        { src: `${base}/images/Hallenbild_2024_3.webp`, alt: 'Bild: Hallenbild 3' },
+        { src: `${base}/images/Hallenbild_2024_4.webp`, alt: 'Bild: Hallenbild 4' },
+        { src: `${base}/images/Hallenbild_2024_5.webp`, alt: 'Bild: Hallenbild 5' },
+        { src: `${base}/images/Hallenbild_2024_6.webp`, alt: 'Bild: Hallenbild 6' },
       ]
     },
     {
@@ -56,8 +38,8 @@
       title: 'Förderverein meets JUMPING FITNESS',
       description: '„Richtig cool“, so das Feedback der Kinder und Eltern, die heute erstmals am JUMPING FITNESS im EASYFITNESS in Erfurt teilgenommen. Jeden Montag von 16.00-16.45 Uhr findet ein Kurs von jung bis alt statt. Wer Lust hat sich auszupowern und „auf Touren“ zu kommen kann sich gerne bei uns melden. Wir sind auf jeden Fall das nächste Mal wieder dabei.',
       images: [
-        { src: Förderverein_JUMPING_Fitness , alt: 'Bild: Förderverein JUMPING Fitness'},
-        { src: Pennewiss_Fitness_Instagram, alt: 'Bild: Pennewiss Fitness Instagram'}
+        { src: `${base}/images/Förderverein_JUMPING_Fitness.webp` , alt: 'Bild: Förderverein JUMPING Fitness'},
+        { src: `${base}/images/Pennewiss_Fitness_Instagram.webp`, alt: 'Bild: Pennewiss Fitness Instagram'}
       ]
     },
     {
@@ -66,9 +48,9 @@
       title: 'Erfolgreiche dm-markt Kassieraktion',
       description: 'Ein großes Dankeschön geht an den dm-Markt im Thüringen Park Erfurt. In einer bisher einmaligen Aktion und mit Unterstützung der Bundesliga Profis Julie Holm & Josefine Hanfland sowie 12 Nachwuchshandballerinnen wurde in einer 2-stündigen Aktion eine unfassbare Summe von 5.700 EUR erwirtschaftet. Die Summe wird zu 100% an den Förderverein gespendet. DANKE an alle Beteiligten, die diese Aktion so erfolgreich gemacht haben.',
       images: [
-        { src: kassieraktion_bild_alle_2024 , alt: 'Bild: Kassieraktion'},
-        { src: drogerie_markt_spende_check_2024 , alt: 'Bild: Kassieraktion Check'},
-        { src: pdf_kassieraktion_2024 , alt: 'Bild: Pdf Kassieraktion'}
+        { src: `${base}/images/kassieraktion_bild_alle_2024.webp` , alt: `Bild: Kassieraktion`},
+        { src: `${base}/images/drogerie_markt_spende_check_2024.webp` , alt: `Bild: Kassieraktion Check`},
+        { src: `${base}/images/pdf_kassieraktion_2024.webp` , alt: `Bild: Pdf Kassieraktion`}
       ]
     },
     {
@@ -77,7 +59,7 @@
       title: 'Internationales Handballturnier Kolding 2025',
       description: 'Wir wollen den Mädchen der D-Jugend des THC die Teilnahme an einem der größten Handballturniere ermöglichen.',
       images: [
-        { src: Kolding_Cup_2025 , alt: 'Bild: Kolding Cup 2025'}
+        { src: `${base}/images/Kolding_Cup_2025.webp` , alt: 'Bild: Kolding Cup 2025'}
       ]
     },
     {
@@ -86,7 +68,7 @@
       title: 'Neue Leibchen für den Nachwuchs',
       description: 'Die Leibchen sind bereits im Einsatz, da die Mädels auch in den Ferien fleißig trainiert haben.',
       images: [
-        { src: neue_leibchen_2024, alt: 'Bild: Neue Leibchen 2024'}
+        { src: `${base}/images/neue-leibchen-2024.webp`, alt: 'Bild: Neue Leibchen 2024'}
       ]
     }
   ];

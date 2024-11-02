@@ -1,8 +1,8 @@
 <script>
   import Card from './Card.svelte';
 
-  import AvenidaTherme from '$lib/assets/images/logo_avenida_therme.webp';
-  import HeinzeKollegen from '$lib/assets/images/Logo_Heinze-Kollegen_Website.webp';
+  import AvenidaTherme from '/images/logo_avenida_therme.webp';
+  import HeinzeKollegen from '/images/Logo_Heinze-Kollegen_Website.webp';
 </script>
 
 <section class="container my-5" id="supporters">  
