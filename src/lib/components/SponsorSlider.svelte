@@ -1,4 +1,8 @@
 <script lang="ts">
+
+  import AvenidaTherme from '$lib/assets/images/logo_avenida_therme.webp';
+  import HeinzeKollegen from '$lib/assets/images/Logo_Heinze-Kollegen_Website.webp';
+
   interface SlideProps {
     href: string;
     imgSrc: string;
@@ -8,17 +12,17 @@
   const slides: SlideProps[] = [
     {
       href: "https://www.avenida-therme.de/",
-      imgSrc: "./_assets/images/logo_avenida_therme.webp",
+      imgSrc: AvenidaTherme,
       imgSrcAlt: "Avenida Therme Hohenfelden"
     },
     {
       href: "https://hk-finanzberatung.de/",
-      imgSrc: "./_assets/images/Logo_Heinze-Kollegen_Website.webp",
+      imgSrc: HeinzeKollegen,
       imgSrcAlt: "Heinze & Kollegen Finanzberatung"
     },
   ];
 
-  const duplicatedSlides = [...slides, ...slides];
+  const duplicatedSlides = [...slides, ...slides, ...slides, ...slides, ...slides, ...slides, ...slides, ...slides];
 </script>
 
 

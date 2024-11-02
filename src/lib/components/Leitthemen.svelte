@@ -18,13 +18,13 @@
   ];
 </script>
 
-<section class="container my-5">
-  <h2 class="text-center mb-4">Darin sind wir stark</h2> 
+<section class="container my-4">
+  <h2 class="text-center mb-2">Darin sind wir stark</h2> 
   <div id="leitthemenCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       {#each carouselItems as { title, description }, index}
         <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
-          <div class="card">
+          <div class="card-content">
             <div class="card-body text-center">
               <h5 class="card-title">{title}</h5>
               <p class="card-text">{description}</p>
@@ -34,11 +34,11 @@
       {/each}
     </div>
     <!-- svelte-ignore a11y_consider_explicit_label -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#leitthemenCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#leitthemenCarousel" data-bs-slide="next">
       <span class="carousel-control-prev-icon" aria-hidden="true" aria-label="Previous"></span>
     </button>
     <!-- svelte-ignore a11y_consider_explicit_label -->
-    <button class="carousel-control-next" type="button" data-bs-target="#leitthemenCarousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#leitthemenCarousel" data-bs-slide="prev">
       <span class="carousel-control-next-icon" aria-hidden="true" aria-label="Next"></span>
     </button> 
   </div>

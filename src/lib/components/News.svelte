@@ -93,21 +93,21 @@
 
 <WaveTop />
 
-<div class="secondary-background">
+<div id="News" class="secondary-background">
   <section class="news-section container text-center">
     <h2 class="text-center mb-3">News & Aktuelles</h2>
     <div class="row justify-content-center">
       {#each newsCards as card}
-        <div class="col-md-5 mb-1">
+        <div class="col-md-5 mb-1 flex-shrink">
           <div class="timeline-date px-4">{card.date}</div>
-          <div class="card">
+          <div class="card-content">
             <div id={card.id} class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 {#each card.images as image, index}
                   <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
                     <img
                       src={image.src}
-                      class="card-img-top"
+                      class="card-img-top-content"
                       alt={image.alt}
                       data-bs-toggle="modal"
                       data-bs-target={image.modalId}
@@ -134,7 +134,7 @@
         </div>
       {/each}
     </div>
-    <a href="/whn-thueringen.github.io/projekte/" class="btn btn-primary">Alle Projekte</a>
+    <a href="/whn-thueringen.github.io/projekte/" class="btn-own">Alle Projekte</a>
   </section>
 </div>
 

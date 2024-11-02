@@ -27,11 +27,11 @@
       </div>
       <div class="col">
         <!-- Kontoinhaber-Karte -->
-        <div class="card">
+        <div class="card-content">
           <div class="card-body">
             <p class="card-text"><strong>Kontoinhaber:</strong> {accountHolder}</p>
             <button 
-              class="btn btn-sm btn-outline-primary" 
+              class="btn-own" 
               on:click={() => copyToClipboard(accountHolder)}
             >
               {copied ? "Kopiert!" : "Kontoinhaber kopieren"}
@@ -40,11 +40,11 @@
         </div>
 
         <!-- IBAN-Karte -->
-        <div class="card">
+        <div class="card-content">
           <div class="card-body">
             <p class="card-text"><strong>IBAN:</strong> {iban}</p>
             <button 
-              class="btn btn-sm btn-outline-primary" 
+              class="btn-own" 
               on:click={() => copyToClipboard(iban)}
             >
               {copied ? "Kopiert!" : "IBAN kopieren"}
@@ -53,11 +53,11 @@
         </div>
 
         <!-- BIC-Karte -->
-        <div class="card">
+        <div class="card-content">
           <div class="card-body">
             <p class="card-text"><strong>BIC:</strong> {bic}</p>
             <button 
-              class="btn btn-sm btn-outline-primary" 
+              class="btn-own" 
               on:click={() => copyToClipboard(bic)}
             >
               {copied ? "Kopiert!" : "BIC kopieren"}
