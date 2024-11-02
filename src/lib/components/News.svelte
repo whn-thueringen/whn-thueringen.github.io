@@ -20,6 +20,8 @@
 
   import neue_leibchen_2024 from '$lib/assets/images/neue-leibchen-2024.webp';
 
+  import { base } from '$app/paths';
+
   interface Image {
     src: string;
     alt: string;
@@ -134,7 +136,7 @@
         </div>
       {/each}
     </div>
-    <a href="/whn-thueringen.github.io/projekte/" class="btn-own">Alle Projekte</a>
+    <a href="{base}/projekte/" class="btn-own">Alle Projekte</a>
   </section>
 </div>
 

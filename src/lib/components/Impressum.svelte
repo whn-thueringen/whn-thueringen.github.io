@@ -1,5 +1,7 @@
 <script>
-  import WaveTop from "./WaveTop.svelte";
+  import WaveTop from "$lib/components/WaveTop.svelte";
+
+  import { base } from '$app/paths';
 </script>
 
 <WaveTop />
@@ -14,7 +16,7 @@
     <p>Vertreten durch: Ruben Arnold & Steffen Ahrens</p>
     <p>StNr.: 151/141/20933</p>
     <div class="line"></div>
-    <a href="./datenschutz/">Datenschutzerklärung</a>
+    <a href="{base}/datenschutz/">Datenschutzerklärung</a>
   </div>
 </footer>
 
