@@ -6,7 +6,7 @@
   <div class="container-fluid">
     <!-- svelte-ignore a11y_consider_explicit_label -->
     <a class="navbar-brand" href="{base}">
-      <enhanced:img src='{base}/images/favicon.png' alt="WHN Thüringen Logo" class="svg-small" style="max-width: 150px;" aria-label="home"/>
+      <img src='{base}/images/favicon.png' alt="WHN Thüringen Logo" class="svg-small" style="max-width: 150px;" aria-label="home"/>
     </a>
     <h4 class="mt-2 me-3">FwHn Thüringen</h4>
     <button 

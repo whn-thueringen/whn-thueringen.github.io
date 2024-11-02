@@ -32,7 +32,7 @@
       {#each contents as content}
         <div class="col-md-4 mb-4">
           <div class="card-content">
-            <enhanced:img src={content.imgSrc} class="card-img-top-content" alt={content.imgSrcAlt} loading="lazy" />
+            <img src={content.imgSrc} class="card-img-top-content" alt={content.imgSrcAlt} loading="lazy" />
             <div class="card-body text-center">
               <h5 class="card-title">{content.title}</h5>
             </div>

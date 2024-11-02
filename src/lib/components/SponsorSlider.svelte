@@ -31,7 +31,7 @@ import { base } from '$app/paths';
       <div class="slide">
         <!-- svelte-ignore a11y_consider_explicit_label -->
         <a href={slide.href} target="_blank" rel="noopener noreferrer">
-          <enhanced:img src={slide.imgSrc} alt={slide.imgSrcAlt} loading="lazy" />
+          <img src={slide.imgSrc} alt={slide.imgSrcAlt} loading="lazy" />
         </a>
       </div>
     {/each}
