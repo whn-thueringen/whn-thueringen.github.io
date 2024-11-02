@@ -23,7 +23,7 @@
       <div class="text-center mt-2 mb-2">
         <h5>QR-Code</h5>
         <p>Einfach mit ihrer Bank App scannen!</p>
-        <img src={qrCodeSrc} class="img-fluid rounded-start" alt="QR Code" />
+        <enhanced:img src={qrCodeSrc} class="img-fluid rounded-start" alt="QR Code" />
       </div>
       <div class="col">
         <!-- Kontoinhaber-Karte -->

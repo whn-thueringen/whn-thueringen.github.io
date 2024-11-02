@@ -31,7 +31,7 @@
     {#each duplicatedSlides as slide}
       <div class="slide">
         <a href={slide.href} target="_blank" rel="noopener noreferrer">
-          <img src={slide.imgSrc} alt={slide.imgSrcAlt} loading="lazy" />
+          <enhanced:img src={slide.imgSrc} alt={slide.imgSrcAlt} loading="lazy" />
         </a>
       </div>
     {/each}

@@ -19,7 +19,7 @@
       <div class="carousel-inner">
         {#each images as image, index}
           <div class="carousel-item {index === 0 ? 'active' : ''}">
-            <img
+            <enhanced:img
               src={image.src}
               class="card-img-top-content"
               alt={image.alt}
