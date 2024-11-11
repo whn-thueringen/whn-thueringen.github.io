@@ -25,7 +25,7 @@ const Navbar = () => (
   <nav class="navbar navbar-expand-lg p-2">
     <div class="container-fluid">
       <NavbarImage
-        href="/"
+        href="whn-thueringen.de"
         imgSrc="https://raw.githubusercontent.com/whn-thueringen/whn-thueringen.github.io/refs/heads/main/src/client/_assets/FWHN_Logo_final_fu%CC%88r_Hintergrund_hell.svg"
         imgSrcAlt="WHN Thüringen Logo" 
       />
