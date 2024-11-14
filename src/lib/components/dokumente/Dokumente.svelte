@@ -1,6 +1,8 @@
 <script>
   import Card from './Card.svelte';
 
+  import { base } from '$app/paths';
+
 </script>
 
 <section id="documents" class="container my-5">
@@ -10,7 +12,7 @@
       <Card
         title="Satzung"
         description="Hier findest du die Satzung als PDF zum Download."
-        link="/downloads/Satzung FwHT - Förderverein des weiblichen Handballnachwuchses Thüringen e.V..pdf"
+        link="{base}/downloads/Satzung FwHT - Förderverein des weiblichen Handballnachwuchses Thüringen e.V..pdf"
         linkTitle="Download Satzung"
       />
     </div>
@@ -20,7 +22,7 @@
       <Card
         title="Antrag auf Fördermittel"
         description="Hier befindet sich der Antrag auf Zuschuss oder Kostenübernahme durch den Förderverein."
-        link="/downloads/Fördermittel Förderverein.pdf"
+        link="{base}/downloads/Fördermittel Förderverein.pdf"
         linkTitle="Download Antrag auf Fördermittel"
       />
     </div>
@@ -30,7 +32,7 @@
       <Card
         title="Eintragung"
         description="Hier kannst du die Eintragung finden."
-        link="/downloads/Eintragung Förderverein Wahn Thüringen e. V. .pdf"
+        link="{base}/downloads/Eintragung Förderverein Wahn Thüringen e. V. .pdf"
         linkTitle="Download Eintragung"
       />
     </div>
@@ -40,7 +42,7 @@
       <Card
         title="Gemeinnützigkeit"
         description="Hier kannst du die Gemeinnützigkeit finden."
-        link="/downloads/Gemeinnützigkeit Förderverein FA Erfurt .pdf"
+        link="{base}/downloads/Gemeinnützigkeit Förderverein FA Erfurt .pdf"
         linkTitle="Download Gemeinnützigkeit"
       />
     </div>
