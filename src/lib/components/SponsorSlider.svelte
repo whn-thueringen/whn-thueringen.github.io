@@ -19,6 +19,11 @@ import { base } from '$app/paths';
       imgSrc: `${base}/images/Logo_Heinze-Kollegen_Website.webp`,
       imgSrcAlt: "Heinze & Kollegen Finanzberatung"
     },
+    {
+      href: "https://www.st-georg-hospital.de/",
+      imgSrc: `${base}/images/st-georg-stiftung_logo.webp`,
+      imgSrcAlt: "Stiftung „St.Georg-Hospital“ Delitzsch"
+    }
   ];
 
   const duplicatedSlides = [...slides, ...slides, ...slides, ...slides, ...slides, ...slides, ...slides, ...slides];
