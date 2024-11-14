@@ -21,7 +21,7 @@ import { base } from '$app/paths';
     },
     {
       href: "https://www.st-georg-hospital.de/",
-      imgSrc: `${base}/images/st-georg-stiftung_logo.webp`,
+      imgSrc: `${base}/images/st-georg-stiftung_logo_250.webp`,
       imgSrcAlt: "Stiftung „St.Georg-Hospital“ Delitzsch"
     }
   ];
