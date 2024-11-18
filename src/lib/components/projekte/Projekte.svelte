@@ -8,7 +8,7 @@
   <h1 class="text-center">Projekte</h1>
   <div class="timeline">
     <div class="row justify-content-center">
-      <div class="col-md-10 mb-4">
+      <div class="col-md-7 mb-4">
         <ProjectCard
           target="Project4"
           title="„Girls Cup“ 🤾🏼‍♀️"
