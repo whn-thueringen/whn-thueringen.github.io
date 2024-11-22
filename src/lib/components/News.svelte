@@ -19,7 +19,7 @@
   
   const newsCards: CardProps[] = [
     {
-      id: 'News6',
+      id: 'News7',
       date: 'November 2024 | Erfurt',
       title: 'HEINZE & KOLLEGEN unterstützen die Minis',
       description: 'Dank der nagelneuen Torabhängungen von HEINZE & KOLLEGEN können die Kleinsten nun endlich wettkampfgerecht trainieren. Eine wundervolle Geste unseres Unterstützers. ',
