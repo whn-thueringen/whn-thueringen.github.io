@@ -2,21 +2,13 @@
   import ProjectCard from './Card.svelte';
 
   import { base } from '$app/paths';
-
-  import Kolding_Cup_2025 from '/images/Kolding_Cup_2025.webp';
-
-  import kassieraktion_bild_alle_2024 from '/images/kassieraktion_bild_alle_2024.webp';
-  import drogerie_markt_spende_check_2024 from '/images/drogerie_markt_spende_check_2024.webp';
-  import pdf_kassieraktion_2024 from '/images/pdf_kassieraktion_2024.webp';
-
-  import Handballcamp_2024 from '/images/Handballcamp_2024.webp';
 </script>
 
 <div>
   <h1 class="text-center">Projekte</h1>
   <div class="timeline">
     <div class="row justify-content-center">
-      <div class="col-md-10 mb-4">
+      <div class="col-md-7 mb-4">
         <ProjectCard
           target="Project4"
           title="„Girls Cup“ 🤾🏼‍♀️"

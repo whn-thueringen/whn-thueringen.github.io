@@ -1,13 +1,7 @@
 <script>
   import Card from './Card.svelte';
 
-  import gemeinnuetzige_einrichungen from '/downloads/Gemeinnützigkeit Förderverein FA Erfurt .pdf';
-
-  import fördermittel from '/downloads/Fördermittel Förderverein.pdf';
-
-  import eintragung from '/downloads/Eintragung Förderverein Wahn Thüringen e. V. .pdf';
-
-  import satzung from '/downloads/Satzung FwHT - Förderverein des weiblichen Handballnachwuchses Thüringen e.V..pdf';
+  import { base } from '$app/paths';
 
 </script>
 
@@ -18,7 +12,7 @@
       <Card
         title="Satzung"
         description="Hier findest du die Satzung als PDF zum Download."
-        link="{ satzung }"
+        link="{base}/downloads/Satzung FwHT - Förderverein des weiblichen Handballnachwuchses Thüringen e.V..pdf"
         linkTitle="Download Satzung"
       />
     </div>
@@ -28,7 +22,7 @@
       <Card
         title="Antrag auf Fördermittel"
         description="Hier befindet sich der Antrag auf Zuschuss oder Kostenübernahme durch den Förderverein."
-        link="{ fördermittel }"
+        link="{base}/downloads/Fördermittel Förderverein.pdf"
         linkTitle="Download Antrag auf Fördermittel"
       />
     </div>
@@ -38,7 +32,7 @@
       <Card
         title="Eintragung"
         description="Hier kannst du die Eintragung finden."
-        link="{ eintragung }"
+        link="{base}/downloads/Eintragung Förderverein Wahn Thüringen e. V. .pdf"
         linkTitle="Download Eintragung"
       />
     </div>
@@ -48,10 +42,11 @@
       <Card
         title="Gemeinnützigkeit"
         description="Hier kannst du die Gemeinnützigkeit finden."
-        link="{ gemeinnuetzige_einrichungen }"
+        link="{base}/downloads/Gemeinnützigkeit Förderverein FA Erfurt .pdf"
         linkTitle="Download Gemeinnützigkeit"
       />
     </div>
   </div>
 </section>
+
 

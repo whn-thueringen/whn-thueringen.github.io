@@ -1,8 +1,8 @@
-name: Deploy GitHub Page
+name: Deploy The GitHub Page
 
 on:
   push:
-    branches: 'svelte'
+    branches: 'main'
 
 jobs:
   build_site:
