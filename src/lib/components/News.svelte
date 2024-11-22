@@ -16,7 +16,7 @@
     description: string;
     images: Image[];
   }
-
+  
   const newsCards: CardProps[] = [
     {
       id: 'News6',
