@@ -27,7 +27,7 @@
         { src: `${base}/images/HeinzeundKollegenUnterstminis.webp` , alt: 'Bild: Heinze und Kollegen unterstützen minis'}
       ]
     },
-    {
+    { 
       id: 'News5',
       date: '27.10.2024 | Erfurt',
       title: '„Girls Cup“ 🤾',
