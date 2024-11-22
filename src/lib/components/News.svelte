@@ -19,6 +19,15 @@
 
   const newsCards: CardProps[] = [
     {
+      id: 'News6',
+      date: 'November 2024 | Erfurt',
+      title: 'HEINZE & KOLLEGEN unterstützen die Minis',
+      description: 'Dank der nagelneuen Torabhängungen von HEINZE & KOLLEGEN können die Kleinsten nun endlich wettkampfgerecht trainieren. Eine wundervolle Geste unseres Unterstützers. ',
+      images: [
+        { src: `${base}/images/HeinzeundKollegenUnterstminis.webp` , alt: 'Bild: Heinze und Kollegen unterstützen minis'}
+      ]
+    },
+    {
       id: 'News5',
       date: '27.10.2024 | Erfurt',
       title: '„Girls Cup“ 🤾',
