@@ -1,18 +1,25 @@
-<script lang=ts>
+<script lang="ts">
   export let qrCodeSrc;
   export let accountHolder;
   export let iban;
   export let bic;
 
-  // Reaktiver Zustand für "kopiert"-Status
-  let copied = false;
+  let copiedAccountHolder = false;
+  let copiedIban = false;
+  let copiedBic = false;
 
-  function copyToClipboard(text:string) {
+  function copyToClipboard(text: string, type: 'accountHolder' | 'iban' | 'bic') {
     navigator.clipboard.writeText(text).then(() => {
-      copied = true;
-      setTimeout(() => {
-        copied = false;
-      }, 2000);
+      if (type === 'accountHolder') {
+        copiedAccountHolder = true;
+        setTimeout(() => copiedAccountHolder = false, 2000);
+      } else if (type === 'iban') {
+        copiedIban = true;
+        setTimeout(() => copiedIban = false, 2000);
+      } else if (type === 'bic') {
+        copiedBic = true;
+        setTimeout(() => copiedBic = false, 2000);
+      }
     });
   }
 </script>
@@ -32,9 +39,9 @@
             <p class="card-text"><strong>Kontoinhaber:</strong> {accountHolder}</p>
             <button 
               class="btn-own" 
-              on:click={() => copyToClipboard(accountHolder)}
+              on:click={() => copyToClipboard(accountHolder, 'accountHolder')}
             >
-              {copied ? "Kopiert!" : "Kontoinhaber kopieren"}
+              {copiedAccountHolder ? "Kopiert!" : "Kontoinhaber kopieren"}
             </button>
           </div>
         </div>
@@ -45,9 +52,9 @@
             <p class="card-text"><strong>IBAN:</strong> {iban}</p>
             <button 
               class="btn-own" 
-              on:click={() => copyToClipboard(iban)}
+              on:click={() => copyToClipboard(iban, 'iban')}
             >
-              {copied ? "Kopiert!" : "IBAN kopieren"}
+              {copiedIban ? "Kopiert!" : "IBAN kopieren"}
             </button>
           </div>
         </div>
@@ -58,9 +65,9 @@
             <p class="card-text"><strong>BIC:</strong> {bic}</p>
             <button 
               class="btn-own" 
-              on:click={() => copyToClipboard(bic)}
+              on:click={() => copyToClipboard(bic, 'bic')}
             >
-              {copied ? "Kopiert!" : "BIC kopieren"}
+              {copiedBic ? "Kopiert!" : "BIC kopieren"}
             </button>
           </div>
         </div>
