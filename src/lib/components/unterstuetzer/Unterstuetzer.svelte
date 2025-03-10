@@ -22,11 +22,18 @@
       ImgClass="card-img-top p-2"
     />
     <Card
+    title="VEKA Umwelttechnik"
+    imgSrc="{base}/images/logo_veka-umwelttechnik_rgb.webp"
+    imgSrcAlt="VEKA Umwelttechnik"
+    link="https://www.veka-umwelttechnik.de/start/"
+    ImgClass="p-2 max-w-52"
+    />
+    <Card
       title="Stiftung „St.Georg-Hospital“ Delitzsch"
       imgSrc="{base}/images/st-georg-stiftung_logo_250.webp"
       imgSrcAlt="Stiftung „St.Georg-Hospital“ Delitzsch"
       link="https://www.st-georg-hospital.de/"
       ImgClass="p-2 max-w-52"
-  />
+    />
   </div>
 </section>

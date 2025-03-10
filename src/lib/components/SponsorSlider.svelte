@@ -15,6 +15,11 @@ import { base } from '$app/paths';
       imgSrcAlt: "Avenida Therme Hohenfelden"
     },
     {
+      href: "https://www.veka-umwelttechnik.de/start/",
+      imgSrc: `${base}/images/logo_veka-umwelttechnik_rgb.webp`,
+      imgSrcAlt: "VEKA Umwelttechnik"
+    },
+    {
       href: "https://hk-finanzberatung.de/",
       imgSrc: `${base}/images/Logo_Heinze-Kollegen_Website.webp`,
       imgSrcAlt: "Heinze & Kollegen Finanzberatung"
