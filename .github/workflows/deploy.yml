@@ -37,8 +37,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: /build
-
+          path: build/
+  
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
