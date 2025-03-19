@@ -35,5 +35,12 @@
       link="https://www.st-georg-hospital.de/"
       ImgClass="p-2 max-w-52"
     />
+    <Card
+    title="Hauke Metallbau GmbH"
+    imgSrc="{base}/images/haukelogo.webp"
+    imgSrcAlt="Hauke Metallbau GmbH"
+    link="https://hauke-metallbau.de/"
+    ImgClass="p-2 max-w-52"
+  />
   </div>
 </section>
