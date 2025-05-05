@@ -33,6 +33,11 @@ import { base } from '$app/paths';
       href: "https://hauke-metallbau.de/",
       imgSrc: `${base}/images/haukelogo.webp`,
       imgSrcAlt: "Stiftung „St.Georg-Hospital“ Delitzsch"
+    },
+    {
+      href: "https://www.brother.de/verbrauchsmaterial",
+      imgSrc: `${base}/images/head_brotherlogo.webp`,
+      imgSrcAlt: "Brother Verbrauchsmaterial"
     }
   ];
 
