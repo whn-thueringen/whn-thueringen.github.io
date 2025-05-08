@@ -12,6 +12,7 @@
     <p><strong>Förderverein des weiblichen Handballnachwuchses in Thüringen e.V.</strong></p>
     <p class='m-0'>Ansprechpartner: Steffi Günther</p>
     <p>Telefon: <a href='tel:+4917644415740' class='mb-3'>+49 176 44415740</a></p>
+    <p class='m-0'>c/o Steffi Günther</p>
     <p class='m-0'>Eislebener Straße 16</p>
     <p class='m-0'>99195 Erfurt</p>
     <p class='mb-3'>Deutschland</p>
