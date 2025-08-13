@@ -38,6 +38,11 @@ import { base } from '$app/paths';
       href: "https://www.brother.de/verbrauchsmaterial",
       imgSrc: `${base}/images/head_brotherlogo.webp`,
       imgSrcAlt: "Brother Verbrauchsmaterial"
+    },
+    {
+      href: "https://www.ing-kahlo.de/",
+      imgSrc: `${base}/images/kahlo_logo_bunt.svg`,
+      imgSrcAlt: "Kahlo Ingenieursbüro"
     }
   ];
 

@@ -41,6 +41,12 @@
     imgSrc="{base}/images/head_brotherlogo.webp"
     imgSrcAlt="Brother Verbrauchsmaterial"
     link="https://www.brother.de/verbrauchsmaterial"
-  />
+    />
+    <Card
+    title="Kahlo Ingenieurbüro"
+    imgSrc="{base}/images/kahlo_logo_bunt.svg"
+    imgSrcAlt="Kahlo Ingenieurbüro"
+    link="https://www.ing-kahlo.de/"
+    />
   </div>
 </section>
