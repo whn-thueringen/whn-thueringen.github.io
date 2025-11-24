@@ -43,6 +43,12 @@
     link="https://www.brother.de/verbrauchsmaterial"
     />
     <Card
+    title="Kahlo Ingenieurbüro"
+    imgSrc="{base}/images/kahlo_logo_bunt.svg"
+    imgSrcAlt="Kahlo Ingenieurbüro"
+    link="https://www.ing-kahlo.de/"
+    />
+    <Card
     title="Katholisches Krankenhaus St. Johann Nepomuk Erfurt"
     imgSrc="{base}/images/kkh_erfurt_logo.png"
     imgSrcAlt="Katholisches Krankenhaus St. Johann Nepomuk Erfurt"
