@@ -22,6 +22,15 @@
   
   const newsCards: CardProps[] = [
     {
+      id: 'News8',
+      date: 'Oktober 2025 | Erfurt',
+      title: 'Katholisches Krankenhaus',
+      description: 'Kleine Spende für den Nachwuchs des Thüringer Handball Clubs vom Katholischen Krankenhaus St. Johann Nepomuk Erfurt. Emily, Leni, Emma und Allessia von der D-Jugendmannschaft des THC haben heute für ihre Mannschaft zwei, vom Katholischen Krankenhaus gesponserte, Notfalltaschen in Empfang genommen. ',
+      media: [
+        { type: 'image', src: `${base}/images/kkh_erfurt_spende.png` , alt: 'Bild: KKH Spende'}
+      ]
+    },
+    {
       id: 'News7',
       date: '18.4.25 - 21.4.25',
       title: 'Handballjugend (Jg. 2013-2014) beim internationalen Handballcup in Kolding zu Besuch',

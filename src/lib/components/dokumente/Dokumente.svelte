@@ -12,7 +12,7 @@
       <Card
         title="Satzung"
         description="Hier findest du die Satzung als PDF zum Download."
-        link="{base}/downloads/Satzung FwHT - Förderverein des weiblichen Handballnachwuchses Thüringen e.V..pdf"
+        link="{base}/downloads/unterschriebene_Satzung_FwHT_ab_24-11-2025[1].pdf"
         linkTitle="Download Satzung"
       />
     </div>
@@ -44,6 +44,26 @@
         description="Hier kannst du die Gemeinnützigkeit finden."
         link="{base}/downloads/Gemeinnützigkeit Förderverein FA Erfurt .pdf"
         linkTitle="Download Gemeinnützigkeit"
+      />
+    </div>
+  </div>
+  <div class="card-content">
+    <div class="card-body">
+      <Card
+        title="Mitgliedsantrag"
+        description="Hier kannst du den Mitgliedsantrag finden."
+        link="{base}/downloads/Mitgliedsantrag_Foerderverein[1].pdf"
+        linkTitle="Download Mitgliedsantrag"
+      />
+    </div>
+  </div>
+  <div class="card-content">
+    <div class="card-body">
+      <Card
+        title="Beitragsordnung"
+        description="Hier kannst du die Beitragsordnung finden."
+        link="{base}/downloads/unterschriebene_Beitragsordnung_Foerderverein_24-11-25[1].pdf"
+        linkTitle="Download Beitragsordnung"
       />
     </div>
   </div>

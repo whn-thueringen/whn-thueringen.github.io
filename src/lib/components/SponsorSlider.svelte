@@ -38,6 +38,11 @@ import { base } from '$app/paths';
       href: "https://www.brother.de/verbrauchsmaterial",
       imgSrc: `${base}/images/head_brotherlogo.webp`,
       imgSrcAlt: "Brother Verbrauchsmaterial"
+    },
+    {
+      href: "https://www.kkh-erfurt.de/",
+      imgSrc: `${base}/images/kkh_erfurt_logo.png`,
+      imgSrcAlt: "Katholisches Krankenhaus St. Johann Nepomuk Erfurt"
     }
   ];
 

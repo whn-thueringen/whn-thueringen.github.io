@@ -41,6 +41,12 @@
     imgSrc="{base}/images/head_brotherlogo.webp"
     imgSrcAlt="Brother Verbrauchsmaterial"
     link="https://www.brother.de/verbrauchsmaterial"
-  />
+    />
+    <Card
+    title="Katholisches Krankenhaus St. Johann Nepomuk Erfurt"
+    imgSrc="{base}/images/kkh_erfurt_logo.png"
+    imgSrcAlt="Katholisches Krankenhaus St. Johann Nepomuk Erfurt"
+    link="https://www.kkh-erfurt.de/"
+    />
   </div>
 </section>
