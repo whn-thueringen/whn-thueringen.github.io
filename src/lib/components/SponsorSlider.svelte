@@ -40,6 +40,11 @@ import { base } from '$app/paths';
       imgSrcAlt: "Brother Verbrauchsmaterial"
     },
     {
+      href: "https://www.ing-kahlo.de/",
+      imgSrc: `${base}/images/kahlo_logo_bunt.svg`,
+      imgSrcAlt: "Kahlo Ingenieursbüro"
+    },
+    {
       href: "https://www.kkh-erfurt.de/",
       imgSrc: `${base}/images/kkh_erfurt_logo.png`,
       imgSrcAlt: "Katholisches Krankenhaus St. Johann Nepomuk Erfurt"
