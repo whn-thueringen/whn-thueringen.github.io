@@ -12,11 +12,6 @@
 
   const contents: ContentProps[] = [
     {
-      imgSrc: `${base}/images/Ruben_Arnold-no_logo.webp`,
-      imgSrcAlt: 'Ruben Arnold',
-      title: 'Ruben Arnold',
-    },
-    {
       imgSrc: `${base}/images/Steffen_Ahrens-no_logo.webp`,
       imgSrcAlt: 'Steffen Ahrens',
       title: 'Steffen Ahrens',

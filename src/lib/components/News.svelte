@@ -21,6 +21,15 @@
   }
   
   const newsCards: CardProps[] = [
+     {
+      id: 'News9',
+      date: 'Dezember 2025 | Erfurt',
+      title: 'Thüringer Ehrenamtsstiftung',
+      description: 'Ein großes Dankeschön gilt der Thüringer Ehrenamtsstiftung. Durch ihre Unterstützung konnte der Förderverein einen neuen Kühlschrank erwerben. Der Förderverein ist somit für Camps, Turniere und Spiele bestens ausgerüstet, um gekühlte Getränke Obst und weitere Köstlichkeiten anbieten zu können. Der gesamte Förderverein sagt DANKESCHÖN.',
+      media: [
+        { type: 'image', src: `${base}/images/new_kuehlschrnk.png` , alt: 'Bild: Kühlscrhank'}
+      ]
+    },
     {
       id: 'News8',
       date: 'Oktober 2025 | Erfurt',
