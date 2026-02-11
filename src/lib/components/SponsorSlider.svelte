@@ -48,6 +48,11 @@ import { base } from '$app/paths';
       href: "https://www.kkh-erfurt.de/",
       imgSrc: `${base}/images/kkh_erfurt_logo.png`,
       imgSrcAlt: "Katholisches Krankenhaus St. Johann Nepomuk Erfurt"
+    },
+    {
+      href: "https://ewisa.de/",
+      imgSrc: `${base}/images/ewisa_logo.png`,
+      imgSrcAlt: "EWISA GmbH"
     }
   ];
 

@@ -16,6 +16,11 @@
       imgSrcAlt: 'Steffen Ahrens',
       title: 'Steffen Ahrens',
     },
+    {
+      imgSrc: `${base}/images/`,
+      imgSrcAlt: 'Steffi Günther',
+      title: 'Steffi Günther',
+    }
   ];
 </script>
 

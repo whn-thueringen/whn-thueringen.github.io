@@ -21,7 +21,15 @@
   }
   
   const newsCards: CardProps[] = [
-     {
+    {
+      id: 'News10',
+      date: 'Erfurt',
+      title: 'Starker Partner für starken Nachwuchs: EWISA GmbH',
+      description: 'Der Förderverein Weiblicher Handballnachwuchs Thüringen e. V. freut sich sehr, mit der EWISA GmbH einen engagierten und verlässlichen Förderer an seiner Seite zu haben. Als regional verwurzeltes Familienunternehmen steht EWISA für Qualität, Verantwortung und nachhaltiges Engagement. Diese Werte spiegeln sich nicht nur im täglichen Handeln des Unternehmens wider, sondern auch in der bewussten Unterstützung des weiblichen Handballnachwuchses in Thüringen. Nachwuchsarbeit bedeutet Perspektiven schaffen – sportlich wie menschlich – und genau hier setzt das Engagement von EWISA an. Gerade im weiblichen Nachwuchshandball sind starke Partner unerlässlich, um junge Talente gezielt zu fördern, Trainingsbedingungen zu verbessern und langfristige Entwicklungswege zu ermöglichen. Die Unterstützung durch EWISA leistet dazu einen wichtigen Beitrag und stärkt unsere Arbeit nachhaltig. Unser besonderer Dank gilt Roswitha Ludwig, Geschäftsführerin der EWISA GmbH, für das Vertrauen, die persönliche Unterstützung und das klare Bekenntnis zum Nachwuchssport. Dieses Engagement zeigt, wie wichtig gesellschaftliche Verantwortung und regionale Verbundenheit auch über den sportlichen Bereich hinaus sind. Vielen Dank an EWISA und Frau Ludwig für die partnerschaftliche Unterstützung und das gemeinsame Ziel, den weiblichen Handballnachwuchs in Thüringen langfristig zu stärken – heute und in Zukunft.',
+      media: [
+      ]
+    },
+    {
       id: 'News9',
       date: 'Dezember 2025 | Erfurt',
       title: 'Thüringer Ehrenamtsstiftung',

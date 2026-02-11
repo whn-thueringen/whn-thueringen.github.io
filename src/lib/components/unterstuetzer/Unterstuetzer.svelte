@@ -54,5 +54,11 @@
     imgSrcAlt="Katholisches Krankenhaus St. Johann Nepomuk Erfurt"
     link="https://www.kkh-erfurt.de/"
     />
+    <Card
+    title="EWISA GmbH"
+    imgSrc="{base}/images/ewisa_logo.png"
+    imgSrcAlt="EWISA GmbH"
+    link="https://ewisa.de/"
+    />
   </div>
 </section>
