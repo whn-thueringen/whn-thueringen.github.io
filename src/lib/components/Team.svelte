@@ -17,7 +17,7 @@
       title: 'Steffen Ahrens',
     },
     {
-      imgSrc: `${base}/images/`,
+      imgSrc: `${base}/images/placeholder.png`,
       imgSrcAlt: 'Steffi Günther',
       title: 'Steffi Günther',
     }
